@@ -54,8 +54,180 @@ SELECT * FROM users
 
 
 ``` SQL
-INSERT INTO users (first_name, last_name, gender, email, location, is_admin, register_date) VALUES ('Amir', 'Abdollahpour', '1', 'abdollahpora@gmail.com', 'Mazandaran', '1', '2026')
+INSERT INTO users (first_name, last_name, gender, email, location, is_admin, register_date) VALUES ('Amir', 'Abdollahpour', 'm', 'abdollahpora@gmail.com', 'Iran', '1', '2026-08-20', '1241', '3')
 ```
+
+در ورژن جدید MySQL برای نشان دادن datetime به جای استفاده از / از - استفاده می شود.
+
+
+
+### فیلتر کردن دیتاست:
+
+برای فیلتر کردن دیتاست خودمون از دستور **WHERE** استفاده می کنیم به عنوان مثال برای پیدا کردن کسانی که ادمین هستند از این کد استفاده می کنیم:
+
+``` SQL
+SELECT * FROM users WHERE is_admin = 1;
+```
+
+
+یا برای فیلتر کردن کسانی که در ایران زندگی میکنند می توانیم از این کد استفاده کنیم:
+
+
+``` SQL
+SELECT * FROM users WHERE location = 'Iran';
+
+```
+
+حالا می توانیم این نوع فیلتر کردن ها رو پیچیده تر کنیم:
+1. AND:
+یا (و) خودمون که باید هر دو همزمان درست باشند تا در خروجی به ما نشان داده شود.
+
+```SQL
+SELECT * FROM users WHERE location = 'Iran' AND gender = 'f';
+```
+
+
+3. OR
+یا همان (یا) خودمون که هر کدام از شروط درست باشد آن را با خروجی می دهد.
+4. NOT
+```SQL
+SELECT * FROM users WHERE NOT (gender = 'f');
+```
+حالت منفی آن عبارت منطقی را در نظر می گیرد.
+
+زمانی NOT کاربرد خودش رو نشون میده که ما چندین عبارت منطقی داشته باشیم که بخواهیم نقیض تمام آن ها را در نظر بگیریم.
+
+``` SQL
+SELECT * FROM users WHERE NOT (gender = 'f' AND is_admin = 0);
+```
+مانند اینجا که خانم ها و کسانی که ادمین نیستند **انتخاب نشده اند.**
+
+
+### مقایسه ها ریاضی:
+
+که شامل > , => . < . =< می شود.
+
+که می توانیم در WHERE از آنها استفاده کنیم.
+``` SQL
+SELECT * FROM users WHERE login_count < 2;
+```
+
+اما برای مقادیر NULL نمی شود از مقایسه های ریاضی استفاده کرد باید از IS NULL استفاده شود.
+```SQL
+SELECT * FROM users WHERE login_count IS NULL;
+```
+
+ و برای بررسی اینکه NULL نیستند از این کد استفاده می کنیم.
+```SQL
+SELECT * FROM users WHERE login_count IS NOT NULL;
+```
+
+
+
+### حذف یک سطر یا record از دیتاست:
+
+از این کد استفاده می کنم برای اینکه record ها تکراری که داشتم را حذف حتما راه راحتری برای این موضوع هست :
+
+```SQL
+DELETE FROM users WHERE id = 2 OR id = 3 OR id = 4 OR id = 5;
+```
+میتوانیم بر اساس تمام field های که داریم record هایی که داریم را حذف کنیم. 
+
+### آپدیت کردن :
+
+می دانیم که می شود به صورت دستی اینکار را انجام داد حالا اگر بخواهیم به صورت دستوری این کار را انجام دهیم از این دستور استفاده می کنیم.
+
+در این کد داریم میگیم که آپدیت کن در دیتاست users ایمیل رو به چیزی که مد نظر داریم با توجه به اینکه id آن record برابر ۱ باشد.
+
+
+
+
+
+```SQL
+UPDATE users SET email = 'amir@gmail.com' WHERE id = 1;
+```
+
+
+### اضافه کردن field یا ستون جدید به دیتاست:
+
+برای ساختن ستون جدید از این کد استفاده می کنیم:
+```SQL
+ALTER TABLE users ADD age VARCHAR(3);
+
+```
+
+زمانی که میخوایم هر field رو تغییرات روش اعمال کنیم از MODIFY استفاده می کنیم.
+```SQL
+ALTER TABLE users MODIFY age INT;
+```
+
+
+### مقدار دهی که field ها:
+
+این کد برای تمام id های بیشتر از ۱ برای ستون age عدد ۲۰ را جایگذاری میکنه.
+
+که می تونیم به صورت دستی هم مقدار دهی کنیم.
+
+```SQL
+UPDATE users SET age = 20 where id > 1;
+```
+
+
+
+### مرتب کردن بر اساس ستون دلخواه:
+
+میتوانیم از ORDER BY استفاده کنیم تا بر اساس هر ستونی که میخواهیم دیتاست را خروجی بگیریم.
+
+که عبارت آخر می تواند asc یا به معنای صعودی یا desc به معنای نزولی باشد.
+
+میتوانیم از LIMIT نیز استفاده کنیم تا تعداد record ها خروجی را محدود کنیم.
+```SQL
+SELECT * FROM users ORDER BY last_name desc;
+SELECT * FROM users ORDER BY age desc;
+SELECT * FROM users WHERE gender = 'm' ORDER BY age desc;
+SELECT * FROM users WHERE gender = 'm' ORDER BY age desc LIMIT 1;
+```
+
+
+### وصل کردن دو مقدار ستون بهم:
+
+برای اینکه به عنوان مثال یک ستون برای نام و نام خانوادگی داشته باشیم نیاز هست که دو ستون نام و بعد نام خانوادگی را بهم دیگر وصل کنیم در اینجا می توانیم از تابع CONCAT استفاده کنیم و باید یک نام نیز برای ستون ساخته شده نیز بعد از AS انتخاب کنیم که در اینجا `full_name` هست.
+
+
+
+```SQL
+SELECT id AS unique_id, CONCAT( first_name,' ', last_name) AS full_name FROM users;
+```
+
+
+
+برای فیلتر کردن پیشرفته تر می توانیم بگوییم که سن هایی که بین ۲۰ تا ۳۰ هستند را فقط به ما نمایش بده که به وسیله BETWEEN قابل انجام هست.
+```SQL
+SELECT * FROM users WHERE age BETWEEN 20 AND 30;
+```
+
+
+### استفاده از REGEX:
+
+برای استفاده از REGEX در MySQL باید از کلمه LIKE قبل از دستوری که میخواهیم دنبالش بگردیم استفاده کنیم.
+
+به عنوان مثال برای پیدا کردن تمام نام هایی که با A شروع می شود می توانیم از کد پایین استفاده کنیم و یا ایمیل هایی که با .com تمام می شود.
+
+```SQL
+SELECT * FROM users WHERE first_name LIKE 'A%';
+
+SELECT * FROM users WHERE email LIKE '%.com';
+```
+
+
+
+یک دیگر از روش های فیلتر کردن استفاده از IN هست که میتوانیم بگوییم تمام کاربرانی که یا در ایران هستند یا در انگلستان هستند را به ما نشون بده.
+```SQL
+SELECT * FROM users WHERE location IN('Iran', 'UK);
+
+```
+
+
 
 
 
