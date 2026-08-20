@@ -228,6 +228,90 @@ SELECT * FROM users WHERE location IN('Iran', 'UK);
 ```
 
 
+### ساختن و حذف index:
+
+برای ساختن index از CREATE INDEX استفاده می کنیم.
+
+برای حذف کردن index از DROP INDEX استفاده می کنیم.
+
+```SQL
+CREATE INDEX lindex ON users(location);
+DROP INDEX lindex ON users;
+```
+
+
+## ساختن جدول posts:
+
+در کد پایین ما یک جدول دیگر به نام `posts` را ساختیم که دارای field های، id برای خود همان جدول `posts` در گام بعدی یک *Foreign Key* ساختیم که دو جدول `users` و `posts` رو به هم دیگه وصل کنه. برای هر پست خودمون نیاز داریم که یک عنوان داشته باشیم که با VARCHAR(100) ستون عنوان را ساختیم، برای محتوای هر پست نیز نیاز به یک ستون داریم که از text استفاده شد، بعد زمان انتشار پست.
+
+بعد از اینکه ستون ها را تعریف کردیم باید PK و FK را نیز تعیین کنیم.
+/
+
+```SQL
+
+CREATE table posts (
+id INT AUTO_INCREMENT,
+user_id INT,
+title VARCHAR(100),
+body TEXT,
+publish_date DATETIME DEFAULT CURRENT_TIMESTAMP,
+PRIMARY KEY (id),
+FOREIGN KEY (user_id) REFERENCES users(id)
+) 
+
+
+```
+
+## فیلتر کردن همزمان دو جدول:
+برای این کار نیاز به **JOIN** کردن داریم:
+
+سه نوع JOIN در اینجا معرفی شده:
+1. INNER JOIN
+فقط رکوردهایی را برمی‌گرداند که در هر دو جدول تطابق داشته باشند. به عنوان مثال:
+
+در اینجا ما دو جدول، `posts` و `users` را در کنار هم بر اساس id در جدول `users` و foreign key در جدول `posts` کنار هم قرار می دهیم.
+```SQL
+
+SELECT u.first_name, u.last_name, p.id, p.title FROM posts AS p INNER JOIN users AS u ON u.id = p.user_id;
+
+```
+
+2. RIGHT JOIN
+
+در RIGHT JOIN، آن جدولی که سمت راست قرار دارد یعنی در اینجا `users` با جدول `posts` تطبیق داده می شود و طبق ستون هایی که بعد SELECT انتخاب کردیم به ما خروجی میدهد.
+
+```SQL
+SELECT u.first_name, u.last_name, p.id, p.title FROM posts AS p RIGHT JOIN users AS u ON u.id = p.user_id;
+```
+
+تمام user ها رو نگه میداره و مطابق همون کسانی که پست گذاشتن را به ما خروجی میده و اگر پستی نگذاشته باشند به ما NULL بر می گرداند.
+
+که می توانیم با این کد آن ها را پیدا کنیم.
+
+
+```SQL
+SELECT u.first_name, u.last_name, p.id, p.title FROM posts AS p RIGHT JOIN users AS u ON u.id = p.user_id WHERE p.id IS NULL;
+```
+**تمام رکوردهای جدول سمت راست حفظ می‌شوند.**
+
+3. LEFT JOIN
+
+در LEFT JOIN ، بر خلاف RIGHT JOIN عمل می کند و جدول سمت چپی با جدول سمت راستی تطبیق داده می شود و خروجی به ما میدهد.
+یعنی به طور کلی:
+
+**تمام رکوردهای جدول سمت چپ حفظ می‌شوند.**
+
+
+تمام عنوان های posts را نگه میداره و user هایی که post گذاشتن را به ما خروجی میده.
+```SQL
+SELECT u.first_name, u.last_name, p.id, p.title FROM posts AS p LEFT JOIN users AS u ON u.id = p.user_id;
+```
+
+INNER JOIN → فقط مشترک‌ها
+
+LEFT JOIN  → همه‌ی جدول LEFT + تطابق‌های RIGHT
+
+RIGHT JOIN → همه‌ی جدول RIGHT + تطابق‌های LEFT
 
 
 
