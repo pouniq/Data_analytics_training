@@ -4,17 +4,12 @@
 برای مدیریت این نوع داده ها از DBMS ها استفاده می شود
 
 
----> relational: همه جدول ها با هم دیگه رابطه دارند
-
-
----> non-relational: هیچ رابطه ای باهم دیگر ندارند
-
 زبان برای این نوع داده ها SQL است.
 
 
 -> MySQL
 
-هر جدول یک اسمی داره، و هر جدول یک id (key) داریم.
+هر جدول یک اسمی داره.
 
 و ممکن است که یک جدول، دارای کلید دیگر جدول را داشته باشد که به آن foreign key گفته می شود تا بتوان به عنوان مثال از جدول order ، اطلاعات کاربر را از user_key دریافت کنیم.
 
@@ -54,7 +49,7 @@ SELECT * FROM users
 
 
 ``` SQL
-INSERT INTO users (first_name, last_name, gender, email, location, is_admin, register_date) VALUES ('Amir', 'Abdollahpour', 'm', 'abdollahpora@gmail.com', 'Iran', '1', '2026-08-20', '1241', '3')
+INSERT INTO users (first_name, last_name, gender, email, location, is_admin, register_date, password, login_count) VALUES ('Amir', 'Abdollahpour', 'm', 'abdollahpora@gmail.com', 'Iran', '1', '2026-08-20', '1241', '3')
 ```
 
 در ورژن جدید MySQL برای نشان دادن datetime به جای استفاده از / از - استفاده می شود.
@@ -100,12 +95,18 @@ SELECT * FROM users WHERE NOT (gender = 'f');
 ``` SQL
 SELECT * FROM users WHERE NOT (gender = 'f' AND is_admin = 0);
 ```
-مانند اینجا که خانم ها و کسانی که ادمین نیستند **انتخاب نشده اند.**
+مانند اینجا که خانم ها یا کسانی که ادمین نیستند **انتخاب نشده اند.** یا به عبارتی خانم هایی که ادمین نیستند.
 
 
 ### مقایسه ها ریاضی:
+>   greater than
+>=  greater than or equal
+<   less than
+<=  less than or equal
+=   equal
+<>  not equal
+!=  not equal (MySQL supports this)
 
-که شامل > , => . < . =< می شود.
 
 که می توانیم در WHERE از آنها استفاده کنیم.
 ``` SQL
@@ -207,9 +208,7 @@ SELECT * FROM users WHERE age BETWEEN 20 AND 30;
 ```
 
 
-### استفاده از REGEX:
-
-برای استفاده از REGEX در MySQL باید از کلمه LIKE قبل از دستوری که میخواهیم دنبالش بگردیم استفاده کنیم.
+### استفاده از LIKE:
 
 به عنوان مثال برای پیدا کردن تمام نام هایی که با A شروع می شود می توانیم از کد پایین استفاده کنیم و یا ایمیل هایی که با .com تمام می شود.
 
@@ -223,7 +222,7 @@ SELECT * FROM users WHERE email LIKE '%.com';
 
 یک دیگر از روش های فیلتر کردن استفاده از IN هست که میتوانیم بگوییم تمام کاربرانی که یا در ایران هستند یا در انگلستان هستند را به ما نشون بده.
 ```SQL
-SELECT * FROM users WHERE location IN('Iran', 'UK);
+SELECT * FROM users WHERE location IN('Iran', 'UK');
 
 ```
 
@@ -278,7 +277,7 @@ SELECT u.first_name, u.last_name, p.id, p.title FROM posts AS p INNER JOIN users
 
 2. RIGHT JOIN
 
-در RIGHT JOIN، آن جدولی که سمت راست قرار دارد یعنی در اینجا `users` با جدول `posts` تطبیق داده می شود و طبق ستون هایی که بعد SELECT انتخاب کردیم به ما خروجی میدهد.
+در RIGHT JOIN، آن جدولی که سمت راست قرار دارد یعنی در اینجا `users` تمامش باقی می ماند و مشترک های `posts` در کنار آن قرار می گیرد.
 
 ```SQL
 SELECT u.first_name, u.last_name, p.id, p.title FROM posts AS p RIGHT JOIN users AS u ON u.id = p.user_id;
