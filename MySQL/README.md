@@ -314,4 +314,76 @@ LEFT JOIN  → همه‌ی جدول LEFT + تطابق‌های RIGHT
 RIGHT JOIN → همه‌ی جدول RIGHT + تطابق‌های LEFT
 
 
+## ساختن جدول comments:
+
+
+ساختن جدول comments و وارد کردن دو ریکورد:
+
+```SQL
+CREATE TABLE comments (
+id INT AUTO_INCREMENT,
+post_id INT,
+user_id INT,
+body TEXT,
+publish_date DATETIME DEFAULT CURRENT_TIMESTAMP,
+PRIMARY KEY(id),
+FOREIGN KEY(post_id) REFERENCES posts(id),
+FOREIGN KEY(user_id) REFERENCES users(id)
+);
+SELECT * FROM comments;
+SELECT * FROM posts;
+SELECT * FROM users;
+INSERT INTO comments(post_id, user_id, body) VALUES 
+(1,1,'comment 1'),
+(2,8,'comment 2');
+```
+
+
+### فیلتر کردن سه جدول comments, users, posts:
+
+
+
+  در اینجا یک کئوری برای تعیین اینکه چه کسانی پست گذاشتند و چه کسانی کامنت گذاشتن به طوری که کسی که پست گذاشته، کامنت آن فرد را دیگر در نظر نگیره. 
+
+
+```SQL
+SELECT p.title, c.body, u.first_name, u2.id, u2.first_name AS post_user_name
+FROM comments AS c 
+RIGHT JOIN posts AS p ON p.id = c.post_id
+INNER JOIN users AS u ON p.user_id = u.id
+INNER JOIN users AS u2 ON p.user_id = u2.id
+WHERE u.first_name = 'Amir' AND u2.first_name != 'Amir' ;
+
+```
+
+### استفاده از توابع در کئوری:
+
+- COUNT، شمارش انجام میده
+- MAX, ماکزیمم عدد را در نظر میگیره
+- MIN, می نیمم عدد را در نظر میگیره
+- SUM, ستونهایی عددی را میشود با این تابع باهم جمع زد
+
+```SQL
+-- شمارش تعداد پست عا
+SELECT COUNT(*) FROM posts;
+
+-- ماکزیمم سن از جدول users
+SELECT MAX(age) AS max_age FROM users;
+
+-- می نیمم سن از جدول users
+SELECT MIN(age) AS min_age FROM users;
+
+
+-- جمع تمام سن ها در جدول users
+SELECT SUM(age) AS sum_age FROM users;
+
+-- شمارش افراد در هر گروه جنسیت و تعیین ماکزیمم و می نیمم سن هر جنسیت
+
+SELECT gender, COUNT(*) FROM users GROUP BY gender;
+SELECT gender, MIN(age), MAX(age), COUNT(*) FROM users GROUP BY gender;
+
+-- گروه بندی بر اساس مکان زندگی
+SELECT location,MIN(age), MAX(age), COUNT(*) FROM users GROUP BY location;
+```
+
 
