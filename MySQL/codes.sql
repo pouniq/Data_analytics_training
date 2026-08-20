@@ -51,8 +51,109 @@ SELECT * FROM users WHERE age BETWEEN 20 AND 30;
 SELECT * FROM users WHERE first_name LIKE 'A%';
 
 SELECT * FROM users WHERE email LIKE '%.com';
-SELECT * FROM users WHERE location IN('Iran', 'UK);
+-- SELECT * FROM users WHERE location IN('Iran', 'UK);
 
+
+
+
+-- index
+
+CREATE INDEX lindex ON users(location);
+DROP INDEX lindex ON users;
+
+-- foreign key
+CREATE table posts (
+id INT AUTO_INCREMENT,
+user_id INT,
+title VARCHAR(100),
+body TEXT,
+publish_date DATETIME DEFAULT CURRENT_TIMESTAMP,
+PRIMARY KEY (id),
+FOREIGN KEY (user_id) REFERENCES users(id)
+);
+
+
+INSERT INTO posts (user_id, title, body) VALUES
+(1, 'Getting Started with Python', 'Python is a great language for beginners and data scientists.'),
+(1, 'Introduction to Data Science', 'Data science combines statistics, programming, and domain knowledge.'),
+(6, 'Learning SQL', 'SQL is an essential skill for working with relational databases.'),
+(6, 'Why Statistics Matters', 'Statistics helps us understand data and make better decisions.'),
+(7, 'Machine Learning Basics', 'Machine learning allows computers to learn patterns from data.'),
+(7, 'Building Better Habits', 'Small and consistent improvements can lead to great results over time.'),
+(8, 'My First Project', 'I recently completed my first programming project and learned a lot from it.'),
+(8, 'Useful Programming Tips', 'Writing clean and simple code makes projects easier to understand and maintain.');
+
+SELECT * FROM posts;
+
+/*JOIN*/
+-- inner join
+SELECT * FROM posts INNER JOIN users ON users.id = posts.user_id;
+SELECT u.first_name, u.last_name, p.id, p.title FROM posts AS p INNER JOIN users AS u ON u.id = p.user_id;
+
+-- right join
+SELECT u.first_name, u.last_name, p.id, p.title FROM posts AS p RIGHT JOIN users AS u ON u.id = p.user_id;
+
+-- left join
+SELECT u.first_name, u.last_name, p.id, p.title FROM posts AS p LEFT JOIN users AS u ON u.id = p.user_id;
+
+
+
+SELECT u.first_name, u.last_name, p.id, p.title FROM posts AS p RIGHT JOIN users AS u ON u.id = p.user_id WHERE p.id IS NULL;
+
+-- make comment table
+CREATE TABLE comments (
+id INT AUTO_INCREMENT,
+post_id INT,
+user_id INT,
+body TEXT,
+publish_date DATETIME DEFAULT CURRENT_TIMESTAMP,
+PRIMARY KEY(id),
+FOREIGN KEY(post_id) REFERENCES posts(id),
+FOREIGN KEY(user_id) REFERENCES users(id)
+);
+SELECT * FROM comments;
+-- SELECT * FROM posts;
+SELECT * FROM users;
+-- INSERT INTO comments(post_id, user_id, body) VALUES 
+-- (1,1,'comment 1'),
+-- (2,8,'comment 2');
+
+SELECT p.title, c.body, u.first_name, u2.id, u2.first_name AS post_user_name
+FROM comments AS c 
+RIGHT JOIN posts AS p ON p.id = c.post_id
+INNER JOIN users AS u ON p.user_id = u.id
+INNER JOIN users AS u2 ON p.user_id = u2.id
+WHERE u.first_name = 'Amir';
+
+
+
+SELECT COUNT(*) FROM posts;
+
+SELECT MAX(age) AS max_age FROM users;
+SELECT MIN(age) AS min_age FROM users;
+
+SELECT SUM(age) AS sum_age FROM users;
+
+SELECT gender, COUNT(*) FROM users GROUP BY gender;
+SELECT gender, MIN(age), MAX(age), COUNT(*) FROM users GROUP BY gender;
+
+
+SELECT location,MIN(age), MAX(age), COUNT(*) FROM users GROUP BY location;
+
+SELECT 
+CASE WHEN login_count IS NULL THEN 0 
+WHEN login_count = 0 THEN '00'
+ELSE login_count 
+END AS logincount,
+COUNT(*)
+FROM users 
+GROUP BY login_count;
+
+
+
+
+SELECT u.* , CASE WHEN p.post_count IS NULL THEN 0 ELSE p.post_count END FROM users AS u LEFT JOIN 
+(SELECT user_id,COUNT(*) AS post_count FROM posts GROUP BY user_id) AS p ON u.id = p.user_id; 
 
 
 
