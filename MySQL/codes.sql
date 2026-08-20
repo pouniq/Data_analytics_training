@@ -51,7 +51,7 @@ SELECT * FROM users WHERE age BETWEEN 20 AND 30;
 SELECT * FROM users WHERE first_name LIKE 'A%';
 
 SELECT * FROM users WHERE email LIKE '%.com';
--- SELECT * FROM users WHERE location IN('Iran', 'UK);
+SELECT * FROM users WHERE location IN('Iran', 'UK');
 
 
 
