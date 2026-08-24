@@ -407,6 +407,10 @@ SELECT location,MIN(age), MAX(age), COUNT(*) FROM users GROUP BY location;
 
 کدها در فایل **`practice.sql`** قرار دارد.
 
+
+داده ها در فایل `sales.csv` قرار دارد.
+
+
 1. ليست تمام خريدهايي كه به صورت آنلاين انجام شده اند را نمايش دهيد.
 
 
