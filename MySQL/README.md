@@ -405,6 +405,8 @@ SELECT location,MIN(age), MAX(age), COUNT(*) FROM users GROUP BY location;
 
 ## Practice:
 
+کدها در فایل **`practice.sql`** قرار دارد.
+
 1. ليست تمام خريدهايي كه به صورت آنلاين انجام شده اند را نمايش دهيد.
 
 
@@ -431,11 +433,11 @@ SELECT location,MIN(age), MAX(age), COUNT(*) FROM users GROUP BY location;
 
 [جواب پنجم](https://github.com/pouniq/Data_analytics_training/blob/main/MySQL/solutions/5.csv)
 
-6. چند مورد از خريدهاي ثبت شده، شامل تخفيف بودهاند؟
+6. چند مورد از خريدهاي ثبت شده، شامل تخفيف بوده اند؟
 
 [جواب ششم](https://github.com/pouniq/Data_analytics_training/blob/main/MySQL/solutions/6.csv)
 
-7. مشتريان براي پرداخت هزينه خريدها ي خود، از هر روش پرداخت چند بار استفاده كردهاند؟ پركاربردترين روش پرداخت كدام است؟
+7. مشتريان براي پرداخت هزينه خريدهاي خود، از هر روش پرداخت چند بار استفاده كرده اند؟ پركاربردترين روش پرداخت كدام است؟
 
 
 [جواب هفتم](https://github.com/pouniq/Data_analytics_training/blob/main/MySQL/solutions/7.csv)
@@ -452,7 +454,7 @@ SELECT location,MIN(age), MAX(age), COUNT(*) FROM users GROUP BY location;
 
 [جواب نهم](https://github.com/pouniq/Data_analytics_training/blob/main/MySQL/solutions/9.csv)
 
-10. قديميترين و جد يدترين خريد ثبت شده در اين مجموعه داده مربوط به چه تاريخهايی هستند؟
+10. قديمي ترين و جديدترين خريد ثبت شده در اين مجموعه داده مربوط به چه تاريخهايی هستند؟
 
 
 [جواب اولین تاریخ](https://github.com/pouniq/Data_analytics_training/blob/main/MySQL/solutions/10_1.csv)
