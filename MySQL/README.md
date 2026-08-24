@@ -403,8 +403,74 @@ SELECT location,MIN(age), MAX(age), COUNT(*) FROM users GROUP BY location;
 
 
 
+## Practice:
+
+1. ليست تمام خريدهايي كه به صورت آنلاين انجام شده اند را نمايش دهيد.
 
 
+[جواب اول](https://github.com/pouniq/Data_analytics_training/blob/main/MySQL/solutions/1.csv)
+
+2. در كدام تراكنشها مشتر ي بيش از ٤ قلم كالا (`4 < Quantity `)
+خريداري كرده است؟
+
+*در دیتاست من هیچ خروجی نداشت.*
+
+3. ليست ١٠ خريد گران قيمت فروشگاه را به ترتيب نزولي استخراج كنيد. اين خريدها مربوط به كدام شناسه هاي تراكنش هستند؟
+
+
+[جواب سوم](https://github.com/pouniq/Data_analytics_training/blob/main/MySQL/solutions/3.csv)
+
+
+4. مجموع تعداد كل تراكنشهاي ثبت شده در اين مجموعه داده چقدر
+است؟
+
+[جواب چهارم](https://github.com/pouniq/Data_analytics_training/blob/main/MySQL/solutions/4.csv)
+
+
+5. در مجموع در چند شهر مختلف فروش داشته است (بدون تکرار)؟
+
+[جواب پنجم](https://github.com/pouniq/Data_analytics_training/blob/main/MySQL/solutions/5.csv)
+
+6. چند مورد از خريدهاي ثبت شده، شامل تخفيف بودهاند؟
+
+[جواب ششم](https://github.com/pouniq/Data_analytics_training/blob/main/MySQL/solutions/6.csv)
+
+7. مشتريان براي پرداخت هزينه خريدها ي خود، از هر روش پرداخت چند بار استفاده كردهاند؟ پركاربردترين روش پرداخت كدام است؟
+
+
+[جواب هفتم](https://github.com/pouniq/Data_analytics_training/blob/main/MySQL/solutions/7.csv)
+
+8. مجموع درآمد كل فروشگاه از خريدهاي مشتريان جديد و مشتريان تكراري بازگشتي به طور جداگانه چقدر بوده است؟
+
+
+
+[جواب هشتم](https://github.com/pouniq/Data_analytics_training/blob/main/MySQL/solutions/8.csv)
+
+9. ليست خريدهايي كه در آنها هم مبلغ كل بيشتر از ١٠٠ هزار تومان بوده و هم در شهر «تهران» (يا يكي از شهرها ي موجود در ستون) انجام شده اند را استخراج كنيد.
+
+
+
+[جواب نهم](https://github.com/pouniq/Data_analytics_training/blob/main/MySQL/solutions/9.csv)
+
+10. قديميترين و جد يدترين خريد ثبت شده در اين مجموعه داده مربوط به چه تاريخهايی هستند؟
+
+
+[جواب اولین تاریخ](https://github.com/pouniq/Data_analytics_training/blob/main/MySQL/solutions/10_1.csv)
+
+
+
+
+[جواب آخرین تاریخ](https://github.com/pouniq/Data_analytics_training/blob/main/MySQL/solutions/10_2.csv)
+
+11. ميانگين مبلغ كل تراكنشها در هر شهر چقدر است؟
+
+
+[جواب یازدهم](https://github.com/pouniq/Data_analytics_training/blob/main/MySQL/solutions/11.csv)
+
+12. كدام روشهاي پرداخت بيش از ٥٠ بار استفاده شدهاند؟
+
+
+[جواب دوازدهم](https://github.com/pouniq/Data_analytics_training/blob/main/MySQL/solutions/12.csv)
 
 
 
