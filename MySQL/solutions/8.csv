@@ -1,0 +1,3 @@
+CustomerType,SUM(TotalAmount)
+"New Customer",289276500
+"Returning Customer",465419850

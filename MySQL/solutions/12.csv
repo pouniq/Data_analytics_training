@@ -1,0 +1,4 @@
+PaymentMethod,COUNT(PaymentMethod)
+Card,226
+Online,177
+Cash,93
