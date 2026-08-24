@@ -1,0 +1,501 @@
+SaleID,Date,CustomerID,ProductID,Quantity,UnitPrice,Discount,PaymentMethod,Channel,City,CustomerType,TotalAmount,Uniqueness,BookCategory,BookAgeYears,Condition,Language
+S0001,2025-08-03,C0027,P017,2,825000,0,Card,Online,Rasht,New Customer,1650000,4,Religious-Mystical,66,Acceptable,Persian-Arabic
+S0002,2025-08-05,C0013,P003,1,1000000,0,Online,Online,Nowshahr,New Customer,1000000,5,Philosophy,27,Excellent,Old Persian
+S0003,2025-08-05,C0104,P031,1,1336000,0,Card,Online,Nowshahr,New Customer,1336000,6,Classical Literature,33,Excellent,Persian
+S0004,2025-08-06,C0158,P026,1,1375000,206250,Online,Online,Nowshahr,New Customer,1168750,6,History,38,Excellent,Persian-Arabic
+S0005,2025-08-06,C0083,P017,1,801000,200250,Card,In-Person,Rasht,New Customer,600750,4,Religious-Mystical,66,Acceptable,Persian-Arabic
+S0006,2025-08-06,C0009,P015,1,830000,0,Card,In-Person,Nowshahr,New Customer,830000,4,Classical Literature,57,Good,Persian-Arabic
+S0007,2025-08-07,C0032,P013,1,2935000,0,Card,In-Person,Nowshahr,New Customer,2935000,9,Manuscript,53,Acceptable,Old Persian
+S0008,2025-08-09,C0181,P020,2,692000,0,Cash,In-Person,Rasht,New Customer,1384000,3,Classical Poetry,111,Acceptable,Persian
+S0009,2025-08-09,C0136,P040,1,1100000,0,Online,Online,Rasht,New Customer,1100000,5,Classical Poetry,40,Excellent,Persian
+S0010,2025-08-10,C0092,P010,2,233000,0,Online,Online,Rasht,New Customer,466000,1,History,18,Good,Persian-Arabic
+S0011,2025-08-10,C0164,P011,1,532000,0,Online,Online,Nowshahr,New Customer,532000,3,Manuscript,28,Excellent,Persian-Arabic
+S0012,2025-08-12,C0076,P003,1,1044000,208800,Online,Online,Rasht,New Customer,835200,5,Philosophy,27,Excellent,Old Persian
+S0013,2025-08-13,C0139,P025,2,1804000,0,Cash,In-Person,Rasht,New Customer,3608000,7,Philosophy,38,Excellent,Old Persian
+S0014,2025-08-13,C0040,P033,1,702000,175500,Card,In-Person,Rasht,New Customer,526500,4,History,20,Good,Persian-Arabic
+S0015,2025-08-14,C0041,P004,1,1221000,0,Online,Online,Nowshahr,New Customer,1221000,5,Religious-Mystical,105,Excellent,Persian-Arabic
+S0016,2025-08-14,C0059,P021,1,1909000,0,Cash,In-Person,Rasht,New Customer,1909000,7,Classical Literature,49,Excellent,Old Persian
+S0017,2025-08-15,C0054,P019,1,1009000,0,Online,Online,Nowshahr,New Customer,1009000,5,Classical Poetry,26,Good,Persian-Arabic
+S0018,2025-08-17,C0156,P035,1,2536000,0,Cash,In-Person,Rasht,New Customer,2536000,8,History,99,Excellent,Old Persian
+S0019,2025-08-18,C0174,P029,1,740000,0,Cash,In-Person,Nowshahr,New Customer,740000,4,Manuscript,33,Acceptable,Persian
+S0020,2025-08-18,C0117,P025,1,1810000,362000,Cash,In-Person,Rasht,New Customer,1448000,7,Philosophy,38,Excellent,Old Persian
+S0021,2025-08-19,C0087,P004,2,1250000,0,Card,In-Person,Rasht,New Customer,2500000,5,Religious-Mystical,105,Excellent,Persian-Arabic
+S0022,2025-08-20,C0021,P007,1,797000,0,Card,In-Person,Nowshahr,New Customer,797000,4,Religious-Mystical,28,Excellent,Old Persian
+S0023,2025-08-22,C0188,P019,1,1000000,50000,Cash,In-Person,Rasht,New Customer,950000,5,Classical Poetry,26,Good,Persian-Arabic
+S0024,2025-08-23,C0137,P023,1,792000,0,Card,Online,Nowshahr,New Customer,792000,3,History,154,Good,Old Persian
+S0025,2025-08-23,C0179,P031,1,1467000,0,Card,In-Person,Rasht,New Customer,1467000,6,Classical Literature,33,Excellent,Persian
+S0026,2025-08-25,C0033,P028,1,1089000,130680,Online,Online,Nowshahr,New Customer,958320,5,Philosophy,37,Good,Old Persian
+S0027,2025-08-26,C0001,P036,1,2265000,0,Card,Online,Rasht,New Customer,2265000,8,Religious-Mystical,43,Excellent,Old Persian
+S0028,2025-08-27,C0124,P021,1,1797000,0,Card,Online,Nowshahr,New Customer,1797000,7,Classical Literature,49,Excellent,Old Persian
+S0029,2025-08-27,C0147,P042,3,2516000,1509600,Online,Online,Nowshahr,New Customer,6038400,8,Classical Literature,65,Good,Persian-Arabic
+S0030,2025-08-29,C0132,P002,1,1135000,283750,Card,In-Person,Rasht,New Customer,851250,5,Manuscript,61,Excellent,Persian
+S0031,2025-08-30,C0029,P039,1,733000,0,Card,In-Person,Rasht,New Customer,733000,4,Religious-Mystical,34,Good,Persian
+S0032,2025-08-31,C0034,P024,1,1595000,0,Card,In-Person,Rasht,New Customer,1595000,6,Philosophy,89,Good,Old Persian
+S0033,2025-08-31,C0143,P002,2,1134000,0,Card,In-Person,Rasht,New Customer,2268000,5,Manuscript,61,Excellent,Persian
+S0034,2025-08-31,C0153,P013,1,3068000,0,Online,Online,Rasht,New Customer,3068000,9,Manuscript,53,Acceptable,Old Persian
+S0035,2025-09-03,C0046,P041,1,2111000,0,Card,In-Person,Rasht,New Customer,2111000,7,Philosophy,122,Good,Persian
+S0036,2025-09-04,C0029,P020,2,709000,354500,Cash,In-Person,Rasht,Returning Customer,1063500,3,Classical Poetry,111,Acceptable,Persian
+S0037,2025-09-05,C0132,P036,2,2285000,457000,Cash,In-Person,Rasht,Returning Customer,4113000,8,Religious-Mystical,43,Excellent,Old Persian
+S0038,2025-09-05,C0151,P035,1,2297000,0,Cash,In-Person,Rasht,New Customer,2297000,8,History,99,Excellent,Old Persian
+S0039,2025-09-06,C0153,P025,1,1780000,267000,Cash,In-Person,Rasht,Returning Customer,1513000,7,Philosophy,38,Excellent,Old Persian
+S0040,2025-09-07,C0094,P006,2,1980000,990000,Card,In-Person,Rasht,New Customer,2970000,7,History,175,Good,Persian
+S0041,2025-09-07,C0059,P029,1,747000,0,Card,Online,Rasht,Returning Customer,747000,4,Manuscript,33,Acceptable,Persian
+S0042,2025-09-07,C0151,P031,2,1333000,0,Card,Online,Rasht,Returning Customer,2666000,6,Classical Literature,33,Excellent,Persian
+S0043,2025-09-08,C0104,P014,1,1097000,0,Online,Online,Nowshahr,Returning Customer,1097000,5,Manuscript,53,Acceptable,Old Persian
+S0044,2025-09-13,C0034,P033,1,722000,0,Card,In-Person,Rasht,Returning Customer,722000,4,History,20,Good,Persian-Arabic
+S0045,2025-09-13,C0106,P027,1,1128000,0,Card,Online,Nowshahr,New Customer,1128000,5,Manuscript,44,Acceptable,Old Persian
+S0046,2025-09-14,C0018,P026,1,1372000,0,Card,Online,Nowshahr,New Customer,1372000,6,History,38,Excellent,Persian-Arabic
+S0047,2025-09-15,C0055,P002,2,1159000,0,Online,Online,Nowshahr,New Customer,2318000,5,Manuscript,61,Excellent,Persian
+S0048,2025-09-16,C0021,P001,2,2026000,0,Online,Online,Nowshahr,Returning Customer,4052000,7,Philosophy,87,Excellent,Old Persian
+S0049,2025-09-17,C0135,P022,1,586000,58600,Card,In-Person,Rasht,New Customer,527400,3,Manuscript,44,Excellent,Persian-Arabic
+S0050,2025-09-17,C0118,P034,1,2086000,0,Card,Online,Nowshahr,New Customer,2086000,7,Philosophy,102,Good,Persian-Arabic
+S0051,2025-09-17,C0135,P015,1,835000,167000,Online,Online,Rasht,Returning Customer,668000,4,Classical Literature,57,Good,Persian-Arabic
+S0052,2025-09-18,C0031,P017,1,821000,0,Card,In-Person,Nowshahr,New Customer,821000,4,Religious-Mystical,66,Acceptable,Persian-Arabic
+S0053,2025-09-18,C0110,P027,1,1126000,0,Online,Online,Rasht,New Customer,1126000,5,Manuscript,44,Acceptable,Old Persian
+S0054,2025-09-19,C0130,P042,2,2462000,492400,Card,In-Person,Rasht,New Customer,4431600,8,Classical Literature,65,Good,Persian-Arabic
+S0055,2025-09-19,C0083,P018,1,1071000,214200,Card,In-Person,Rasht,Returning Customer,856800,5,Religious-Mystical,48,Excellent,Persian
+S0056,2025-09-19,C0165,P031,1,1365000,0,Card,Online,Nowshahr,New Customer,1365000,6,Classical Literature,33,Excellent,Persian
+S0057,2025-09-19,C0170,P005,1,2842000,0,Card,In-Person,Rasht,New Customer,2842000,9,Classical Poetry,45,Excellent,Persian
+S0058,2025-09-19,C0095,P013,1,2834000,0,Online,Online,Rasht,New Customer,2834000,9,Manuscript,53,Acceptable,Old Persian
+S0059,2025-09-20,C0048,P010,1,233000,0,Card,Online,Rasht,New Customer,233000,1,History,18,Good,Persian-Arabic
+S0060,2025-09-20,C0035,P001,1,2054000,0,Cash,In-Person,Rasht,New Customer,2054000,7,Philosophy,87,Excellent,Old Persian
+S0061,2025-09-22,C0072,P018,1,1066000,0,Cash,In-Person,Rasht,New Customer,1066000,5,Religious-Mystical,48,Excellent,Persian
+S0062,2025-09-22,C0140,P029,3,735000,330750,Card,Online,Nowshahr,New Customer,1874250,4,Manuscript,33,Acceptable,Persian
+S0063,2025-09-22,C0114,P040,1,1107000,221400,Cash,In-Person,Rasht,New Customer,885600,5,Classical Poetry,40,Excellent,Persian
+S0064,2025-09-22,C0154,P004,1,1174000,0,Card,Online,Rasht,New Customer,1174000,5,Religious-Mystical,105,Excellent,Persian-Arabic
+S0065,2025-09-22,C0134,P037,1,933000,111960,Online,Online,Rasht,New Customer,821040,4,Classical Literature,99,Acceptable,Persian-Arabic
+S0066,2025-09-24,C0043,P020,1,688000,172000,Card,In-Person,Rasht,New Customer,516000,3,Classical Poetry,111,Acceptable,Persian
+S0067,2025-09-24,C0158,P008,1,1969000,0,Card,In-Person,Nowshahr,Returning Customer,1969000,7,Philosophy,43,Good,Persian
+S0068,2025-09-25,C0091,P010,1,262000,39300,Cash,In-Person,Rasht,New Customer,222700,1,History,18,Good,Persian-Arabic
+S0069,2025-09-26,C0031,P027,2,1090000,0,Card,In-Person,Nowshahr,Returning Customer,2180000,5,Manuscript,44,Acceptable,Old Persian
+S0070,2025-09-26,C0007,P022,1,536000,0,Cash,In-Person,Rasht,New Customer,536000,3,Manuscript,44,Excellent,Persian-Arabic
+S0071,2025-09-26,C0177,P008,1,1786000,267900,Card,In-Person,Nowshahr,New Customer,1518100,7,Philosophy,43,Good,Persian
+S0072,2025-09-26,C0127,P009,1,1499000,0,Card,Online,Nowshahr,New Customer,1499000,6,Classical Literature,52,Good,Persian
+S0073,2025-09-26,C0090,P015,2,761000,0,Card,In-Person,Nowshahr,New Customer,1522000,4,Classical Literature,57,Good,Persian-Arabic
+S0074,2025-09-27,C0077,P041,1,2096000,0,Card,Online,Nowshahr,New Customer,2096000,7,Philosophy,122,Good,Persian
+S0075,2025-09-27,C0062,P039,1,813000,0,Card,In-Person,Rasht,New Customer,813000,4,Religious-Mystical,34,Good,Persian
+S0076,2025-09-30,C0026,P008,2,1828000,914000,Card,Online,Nowshahr,New Customer,2742000,7,Philosophy,43,Good,Persian
+S0077,2025-09-30,C0103,P032,1,1390000,347500,Online,Online,Nowshahr,New Customer,1042500,5,Religious-Mystical,198,Acceptable,Persian-Arabic
+S0078,2025-09-30,C0185,P007,1,784000,117600,Card,In-Person,Rasht,New Customer,666400,4,Religious-Mystical,28,Excellent,Old Persian
+S0079,2025-09-30,C0035,P010,1,239000,0,Cash,In-Person,Rasht,Returning Customer,239000,1,History,18,Good,Persian-Arabic
+S0080,2025-10-01,C0155,P023,1,765000,38250,Card,Online,Nowshahr,New Customer,726750,3,History,154,Good,Old Persian
+S0081,2025-10-01,C0041,P024,1,1435000,0,Card,In-Person,Nowshahr,Returning Customer,1435000,6,Philosophy,89,Good,Old Persian
+S0082,2025-10-01,C0112,P037,1,857000,0,Card,In-Person,Rasht,New Customer,857000,4,Classical Literature,99,Acceptable,Persian-Arabic
+S0083,2025-10-02,C0169,P006,1,2198000,0,Online,Online,Nowshahr,New Customer,2198000,7,History,175,Good,Persian
+S0084,2025-10-02,C0073,P040,1,1117000,0,Online,Online,Rasht,New Customer,1117000,5,Classical Poetry,40,Excellent,Persian
+S0085,2025-10-02,C0044,P034,1,2000000,0,Cash,In-Person,Rasht,New Customer,2000000,7,Philosophy,102,Good,Persian-Arabic
+S0086,2025-10-03,C0049,P023,1,716000,0,Cash,In-Person,Rasht,New Customer,716000,3,History,154,Good,Old Persian
+S0087,2025-10-03,C0054,P018,1,1064000,0,Card,Online,Nowshahr,Returning Customer,1064000,5,Religious-Mystical,48,Excellent,Persian
+S0088,2025-10-05,C0085,P011,2,541000,0,Online,Online,Nowshahr,New Customer,1082000,3,Manuscript,28,Excellent,Persian-Arabic
+S0089,2025-10-06,C0165,P021,1,1764000,0,Online,Online,Nowshahr,Returning Customer,1764000,7,Classical Literature,49,Excellent,Old Persian
+S0090,2025-10-06,C0005,P010,2,253000,0,Online,Online,Nowshahr,New Customer,506000,1,History,18,Good,Persian-Arabic
+S0091,2025-10-06,C0070,P004,1,1240000,62000,Card,In-Person,Rasht,New Customer,1178000,5,Religious-Mystical,105,Excellent,Persian-Arabic
+S0092,2025-10-08,C0013,P021,3,1859000,1115400,Card,Online,Nowshahr,Returning Customer,4461600,7,Classical Literature,49,Excellent,Old Persian
+S0093,2025-10-09,C0068,P025,1,1920000,0,Card,In-Person,Nowshahr,New Customer,1920000,7,Philosophy,38,Excellent,Old Persian
+S0094,2025-10-09,C0069,P015,1,825000,99000,Card,In-Person,Rasht,New Customer,726000,4,Classical Literature,57,Good,Persian-Arabic
+S0095,2025-10-09,C0002,P024,1,1469000,0,Online,Online,Nowshahr,New Customer,1469000,6,Philosophy,89,Good,Old Persian
+S0096,2025-10-10,C0023,P037,1,917000,0,Cash,In-Person,Rasht,New Customer,917000,4,Classical Literature,99,Acceptable,Persian-Arabic
+S0097,2025-10-11,C0099,P028,3,1110000,0,Card,Online,Nowshahr,New Customer,3330000,5,Philosophy,37,Good,Old Persian
+S0098,2025-10-11,C0111,P037,1,907000,0,Cash,In-Person,Rasht,New Customer,907000,4,Classical Literature,99,Acceptable,Persian-Arabic
+S0099,2025-10-11,C0147,P036,1,2399000,479800,Online,Online,Nowshahr,Returning Customer,1919200,8,Religious-Mystical,43,Excellent,Old Persian
+S0100,2025-10-12,C0023,P029,1,774000,0,Card,In-Person,Rasht,Returning Customer,774000,4,Manuscript,33,Acceptable,Persian
+S0101,2025-10-12,C0181,P032,2,1297000,0,Online,Online,Rasht,Returning Customer,2594000,5,Religious-Mystical,198,Acceptable,Persian-Arabic
+S0102,2025-10-13,C0009,P037,1,925000,0,Online,Online,Nowshahr,Returning Customer,925000,4,Classical Literature,99,Acceptable,Persian-Arabic
+S0103,2025-10-13,C0023,P002,1,1153000,288250,Card,In-Person,Rasht,Returning Customer,864750,5,Manuscript,61,Excellent,Persian
+S0104,2025-10-13,C0042,P006,1,2050000,512500,Card,In-Person,Nowshahr,New Customer,1537500,7,History,175,Good,Persian
+S0105,2025-10-13,C0037,P031,1,1351000,0,Online,Online,Nowshahr,New Customer,1351000,6,Classical Literature,33,Excellent,Persian
+S0106,2025-10-13,C0161,P035,2,2546000,0,Online,Online,Rasht,New Customer,5092000,8,History,99,Excellent,Old Persian
+S0107,2025-10-15,C0075,P022,1,520000,0,Card,In-Person,Rasht,New Customer,520000,3,Manuscript,44,Excellent,Persian-Arabic
+S0108,2025-10-15,C0129,P012,1,1461000,146100,Online,Online,Rasht,New Customer,1314900,6,Classical Poetry,48,Excellent,Persian
+S0109,2025-10-15,C0157,P042,1,2420000,484000,Card,In-Person,Rasht,New Customer,1936000,8,Classical Literature,65,Good,Persian-Arabic
+S0110,2025-10-16,C0123,P011,1,535000,0,Card,In-Person,Rasht,New Customer,535000,3,Manuscript,28,Excellent,Persian-Arabic
+S0111,2025-10-17,C0105,P023,1,783000,0,Online,Online,Nowshahr,New Customer,783000,3,History,154,Good,Old Persian
+S0112,2025-10-18,C0150,P005,1,2993000,0,Card,In-Person,Rasht,New Customer,2993000,9,Classical Poetry,45,Excellent,Persian
+S0113,2025-10-22,C0066,P023,1,801000,120150,Cash,In-Person,Rasht,New Customer,680850,3,History,154,Good,Old Persian
+S0114,2025-10-24,C0180,P015,1,821000,0,Card,In-Person,Rasht,New Customer,821000,4,Classical Literature,57,Good,Persian-Arabic
+S0115,2025-10-24,C0070,P039,2,725000,0,Cash,In-Person,Rasht,Returning Customer,1450000,4,Religious-Mystical,34,Good,Persian
+S0116,2025-10-25,C0162,P040,1,1093000,0,Card,Online,Rasht,New Customer,1093000,5,Classical Poetry,40,Excellent,Persian
+S0117,2025-10-25,C0102,P003,2,1018000,244320,Online,Online,Nowshahr,New Customer,1791680,5,Philosophy,27,Excellent,Old Persian
+S0118,2025-10-25,C0051,P030,1,2259000,0,Online,Online,Nowshahr,New Customer,2259000,8,History,71,Acceptable,Persian-Arabic
+S0119,2025-10-26,C0154,P025,1,1807000,180700,Card,In-Person,Rasht,Returning Customer,1626300,7,Philosophy,38,Excellent,Old Persian
+S0120,2025-10-26,C0024,P026,1,1338000,0,Card,Online,Nowshahr,New Customer,1338000,6,History,38,Excellent,Persian-Arabic
+S0121,2025-10-27,C0016,P037,2,937000,0,Cash,In-Person,Rasht,New Customer,1874000,4,Classical Literature,99,Acceptable,Persian-Arabic
+S0122,2025-10-27,C0160,P041,1,2061000,103050,Card,Online,Rasht,New Customer,1957950,7,Philosophy,122,Good,Persian
+S0123,2025-11-01,C0156,P006,1,2163000,0,Card,In-Person,Rasht,Returning Customer,2163000,7,History,175,Good,Persian
+S0124,2025-11-01,C0145,P002,1,1039000,51950,Cash,In-Person,Rasht,New Customer,987050,5,Manuscript,61,Excellent,Persian
+S0125,2025-11-01,C0021,P014,2,1090000,0,Card,Online,Nowshahr,Returning Customer,2180000,5,Manuscript,53,Acceptable,Old Persian
+S0126,2025-11-02,C0108,P033,1,756000,113400,Online,Online,Rasht,New Customer,642600,4,History,20,Good,Persian-Arabic
+S0127,2025-11-03,C0022,P019,1,1012000,101200,Card,Online,Rasht,New Customer,910800,5,Classical Poetry,26,Good,Persian-Arabic
+S0128,2025-11-04,C0064,P042,1,2358000,235800,Cash,In-Person,Rasht,New Customer,2122200,8,Classical Literature,65,Good,Persian-Arabic
+S0129,2025-11-04,C0088,P019,1,997000,0,Card,In-Person,Rasht,New Customer,997000,5,Classical Poetry,26,Good,Persian-Arabic
+S0130,2025-11-06,C0173,P034,1,2010000,0,Card,In-Person,Rasht,New Customer,2010000,7,Philosophy,102,Good,Persian-Arabic
+S0131,2025-11-06,C0162,P010,1,234000,0,Cash,In-Person,Rasht,Returning Customer,234000,1,History,18,Good,Persian-Arabic
+S0132,2025-11-07,C0121,P029,1,777000,0,Online,Online,Nowshahr,New Customer,777000,4,Manuscript,33,Acceptable,Persian
+S0133,2025-11-07,C0079,P012,1,1522000,0,Card,In-Person,Rasht,New Customer,1522000,6,Classical Poetry,48,Excellent,Persian
+S0134,2025-11-07,C0118,P007,1,747000,0,Card,In-Person,Nowshahr,Returning Customer,747000,4,Religious-Mystical,28,Excellent,Old Persian
+S0135,2025-11-08,C0155,P040,2,1057000,528500,Online,Online,Nowshahr,Returning Customer,1585500,5,Classical Poetry,40,Excellent,Persian
+S0136,2025-11-09,C0096,P027,1,1061000,0,Card,In-Person,Rasht,New Customer,1061000,5,Manuscript,44,Acceptable,Old Persian
+S0137,2025-11-10,C0058,P012,1,1528000,0,Card,In-Person,Rasht,New Customer,1528000,6,Classical Poetry,48,Excellent,Persian
+S0138,2025-11-10,C0033,P018,1,1137000,0,Card,Online,Nowshahr,Returning Customer,1137000,5,Religious-Mystical,48,Excellent,Persian
+S0139,2025-11-11,C0041,P010,1,239000,0,Card,Online,Nowshahr,Returning Customer,239000,1,History,18,Good,Persian-Arabic
+S0140,2025-11-11,C0016,P002,1,1128000,0,Online,Online,Rasht,Returning Customer,1128000,5,Manuscript,61,Excellent,Persian
+S0141,2025-11-12,C0005,P016,1,1486000,297200,Online,Online,Nowshahr,Returning Customer,1188800,6,Classical Poetry,37,Good,Old Persian
+S0142,2025-11-13,C0157,P020,1,719000,0,Online,Online,Rasht,Returning Customer,719000,3,Classical Poetry,111,Acceptable,Persian
+S0143,2025-11-13,C0081,P009,1,1516000,0,Card,In-Person,Rasht,New Customer,1516000,6,Classical Literature,52,,Persian
+S0144,2025-11-13,C0066,P033,1,765000,0,Cash,In-Person,Rasht,Returning Customer,765000,4,History,20,Good,Persian-Arabic
+S0145,2025-11-14,C0141,P036,1,2418000,0,Online,Online,Rasht,New Customer,2418000,8,Religious-Mystical,43,Excellent,Old Persian
+S0146,2025-11-17,C0159,P027,2,1024000,245760,Cash,In-Person,Nowshahr,New Customer,1802240,5,Manuscript,44,Acceptable,Old Persian
+S0147,2025-11-17,C0169,P002,2,1166000,466400,Online,Online,Nowshahr,Returning Customer,1865600,5,Manuscript,61,Excellent,Persian
+S0148,2025-11-17,C0059,P026,1,1475000,73750,Cash,In-Person,Rasht,Returning Customer,1401250,6,History,38,Excellent,Persian-Arabic
+S0149,2025-11-17,C0035,P020,2,645000,64500,Card,Online,Rasht,Returning Customer,1225500,3,Classical Poetry,111,Acceptable,Persian
+S0150,2025-11-18,C0014,P006,1,2144000,0,Card,Online,Nowshahr,New Customer,2144000,7,History,175,,Persian
+S0151,2025-11-18,C0029,P019,1,1002000,120240,Card,In-Person,Rasht,Returning Customer,881760,5,Classical Poetry,26,Good,Persian-Arabic
+S0152,2025-11-18,C0070,P021,1,1760000,0,Card,In-Person,Rasht,Returning Customer,1760000,7,Classical Literature,49,Excellent,Old Persian
+S0153,2025-11-19,C0003,P025,1,1789000,0,Card,In-Person,Nowshahr,New Customer,1789000,7,Philosophy,38,Excellent,Old Persian
+S0154,2025-11-20,C0184,P034,1,1913000,191300,Online,Online,Nowshahr,New Customer,1721700,7,Philosophy,102,Good,Persian-Arabic
+S0155,2025-11-20,C0039,P020,1,636000,0,Card,In-Person,Rasht,New Customer,636000,3,Classical Poetry,111,Acceptable,Persian
+S0156,2025-11-21,C0187,P004,1,1170000,81900,Card,In-Person,Rasht,New Customer,1088100,5,Religious-Mystical,105,Excellent,Persian-Arabic
+S0157,2025-11-21,C0138,P020,1,687000,0,Card,In-Person,Rasht,New Customer,687000,3,Classical Poetry,111,Acceptable,Persian
+S0158,2025-11-22,C0122,P013,1,2983000,447450,Cash,In-Person,Rasht,New Customer,2535550,9,Manuscript,53,Acceptable,Old Persian
+S0159,2025-11-23,C0037,P037,1,915000,0,Card,In-Person,Nowshahr,Returning Customer,915000,4,Classical Literature,99,Acceptable,Persian-Arabic
+S0160,2025-11-23,C0049,P002,1,1104000,77280,Card,In-Person,Rasht,Returning Customer,1026720,5,Manuscript,61,Excellent,Persian
+S0161,2025-11-24,C0033,P005,1,2800000,420000,Cash,In-Person,Nowshahr,Returning Customer,2380000,9,Classical Poetry,45,Excellent,Persian
+S0162,2025-11-26,C0068,P042,1,2271000,0,Card,Online,Nowshahr,Returning Customer,2271000,8,Classical Literature,65,Good,Persian-Arabic
+S0163,2025-11-27,C0028,P021,3,1892000,0,Card,In-Person,Rasht,New Customer,5676000,7,Classical Literature,49,Excellent,Old Persian
+S0164,2025-11-30,C0045,P030,2,2410000,482000,Online,Online,Rasht,New Customer,4338000,8,History,71,Acceptable,Persian-Arabic
+S0165,2025-12-02,C0155,P001,1,1891000,472750,Online,Online,Nowshahr,Returning Customer,1418250,7,Philosophy,87,Excellent,Old Persian
+S0166,2025-12-03,C0006,P022,1,526000,0,Online,Online,Nowshahr,New Customer,526000,3,Manuscript,44,Excellent,Persian-Arabic
+S0167,2025-12-06,C0047,P015,1,759000,53130,Online,Online,Nowshahr,New Customer,705870,4,Classical Literature,57,Good,Persian-Arabic
+S0168,2025-12-06,C0053,P004,2,1171000,351300,Card,In-Person,Rasht,New Customer,1990700,5,Religious-Mystical,105,Excellent,Persian-Arabic
+S0169,2025-12-06,C0086,P006,1,2112000,0,Online,Online,Nowshahr,New Customer,2112000,7,History,175,Good,Persian
+S0170,2025-12-07,C0080,P029,1,792000,0,Card,In-Person,Rasht,New Customer,792000,4,Manuscript,33,Acceptable,Persian
+S0171,2025-12-08,C0064,P009,2,1386000,554400,Card,In-Person,Rasht,Returning Customer,2217600,6,Classical Literature,52,Good,Persian
+S0172,2025-12-09,C0126,P005,1,2946000,0,Card,Online,Rasht,New Customer,2946000,9,Classical Poetry,45,Excellent,Persian
+S0173,2025-12-09,C0064,P030,1,2248000,0,Online,Online,Rasht,Returning Customer,2248000,8,History,71,Acceptable,Persian-Arabic
+S0174,2025-12-09,C0039,P040,1,1007000,0,Card,In-Person,Rasht,Returning Customer,1007000,5,Classical Poetry,40,Excellent,Persian
+S0175,2025-12-09,C0015,P023,2,776000,0,Card,In-Person,Rasht,New Customer,1552000,3,History,154,Good,Old Persian
+S0176,2025-12-11,C0131,P037,1,907000,0,Cash,In-Person,Nowshahr,New Customer,907000,4,Classical Literature,99,Acceptable,Persian-Arabic
+S0177,2025-12-11,C0044,P034,1,1921000,230520,Card,In-Person,Rasht,Returning Customer,1690480,7,Philosophy,102,Good,Persian-Arabic
+S0178,2025-12-12,C0037,P034,1,1856000,371200,Cash,In-Person,Nowshahr,Returning Customer,1484800,7,Philosophy,102,Good,Persian-Arabic
+S0179,2025-12-12,C0133,P038,1,1118000,0,Online,Online,Nowshahr,New Customer,1118000,5,Manuscript,64,Excellent,Persian
+S0180,2025-12-12,C0107,P035,1,2427000,121350,Cash,In-Person,Rasht,New Customer,2305650,8,History,99,Excellent,Old Persian
+S0181,2025-12-13,C0151,P027,1,1079000,129480,Card,In-Person,Rasht,Returning Customer,949520,5,Manuscript,44,Acceptable,Old Persian
+S0182,2025-12-13,C0067,P031,3,1336000,0,Online,Online,Nowshahr,New Customer,4008000,6,Classical Literature,33,Excellent,Persian
+S0183,2025-12-13,C0074,P003,1,1011000,70770,Online,Online,Nowshahr,New Customer,940230,5,Philosophy,27,Excellent,Old Persian
+S0184,2025-12-14,C0087,P007,1,789000,39450,Cash,In-Person,Rasht,Returning Customer,749550,4,Religious-Mystical,28,Excellent,Old Persian
+S0185,2025-12-15,C0166,P010,1,263000,39450,Cash,In-Person,Rasht,New Customer,223550,1,History,18,Good,Persian-Arabic
+S0186,2025-12-15,C0093,P015,1,774000,0,Card,In-Person,Rasht,New Customer,774000,4,Classical Literature,57,Good,Persian-Arabic
+S0187,2025-12-16,C0164,P033,1,754000,0,Online,Online,Nowshahr,Returning Customer,754000,4,History,20,Good,Persian-Arabic
+S0188,2025-12-16,C0105,P021,1,1877000,0,Online,Online,Nowshahr,Returning Customer,1877000,7,Classical Literature,49,Excellent,Old Persian
+S0189,2025-12-17,C0028,P030,1,2308000,346200,Cash,In-Person,Rasht,Returning Customer,1961800,8,History,71,Acceptable,Persian-Arabic
+S0190,2025-12-17,C0152,P042,1,2525000,0,Online,Online,Nowshahr,New Customer,2525000,8,Classical Literature,65,Good,Persian-Arabic
+S0191,2025-12-17,C0024,P028,1,1022000,51100,Online,Online,Nowshahr,Returning Customer,970900,5,Philosophy,37,Good,Old Persian
+S0192,2025-12-18,C0103,P029,1,720000,0,Online,Online,Nowshahr,Returning Customer,720000,4,Manuscript,33,Acceptable,Persian
+S0193,2025-12-19,C0064,P002,1,1072000,0,Cash,In-Person,Rasht,Returning Customer,1072000,5,Manuscript,61,Excellent,Persian
+S0194,2025-12-19,C0090,P020,1,710000,0,Card,In-Person,Nowshahr,Returning Customer,710000,3,Classical Poetry,111,Acceptable,Persian
+S0195,2025-12-20,C0049,P031,1,1456000,218400,Online,Online,Rasht,Returning Customer,1237600,6,Classical Literature,33,Excellent,Persian
+S0196,2025-12-20,C0060,P018,1,1061000,0,Card,In-Person,Rasht,New Customer,1061000,5,Religious-Mystical,48,Excellent,Persian
+S0197,2025-12-20,C0142,P016,1,1509000,0,Card,In-Person,Rasht,New Customer,1509000,6,Classical Poetry,37,Good,Old Persian
+S0198,2025-12-20,C0068,P002,1,1158000,57900,Online,Online,Nowshahr,Returning Customer,1100100,5,Manuscript,61,Excellent,Persian
+S0199,2025-12-21,C0060,P024,2,1502000,0,Card,In-Person,Rasht,Returning Customer,3004000,6,Philosophy,89,Good,Old Persian
+S0200,2025-12-21,C0189,P031,1,1409000,0,Card,In-Person,Nowshahr,New Customer,1409000,6,Classical Literature,33,Excellent,Persian
+S0201,2025-12-22,C0048,P037,1,928000,0,Online,Online,Rasht,Returning Customer,928000,4,Classical Literature,99,Acceptable,Persian-Arabic
+S0202,2025-12-25,C0093,P018,1,1051000,0,Card,In-Person,Rasht,Returning Customer,1051000,5,Religious-Mystical,48,Excellent,Persian
+S0203,2025-12-25,C0190,P025,1,1941000,388200,Cash,In-Person,Nowshahr,New Customer,1552800,7,Philosophy,38,Excellent,Old Persian
+S0204,2025-12-26,C0013,P010,1,252000,50400,Cash,In-Person,Nowshahr,Returning Customer,201600,1,History,18,Good,Persian-Arabic
+S0205,2025-12-27,C0149,P027,1,1107000,0,Online,Online,Nowshahr,New Customer,1107000,5,Manuscript,44,Acceptable,Old Persian
+S0206,2025-12-27,C0094,P006,1,2152000,0,Online,Online,Rasht,Returning Customer,2152000,7,History,175,Good,Persian
+S0207,2025-12-27,C0060,P039,1,733000,51310,Online,Online,Rasht,Returning Customer,681690,4,Religious-Mystical,34,Good,Persian
+S0208,2025-12-27,C0074,P011,1,558000,0,Online,Online,Nowshahr,Returning Customer,558000,3,Manuscript,28,Excellent,Persian-Arabic
+S0209,2025-12-27,C0048,P008,2,1936000,464640,Card,Online,Rasht,Returning Customer,3407360,7,Philosophy,43,Good,Persian
+S0210,2025-12-27,C0155,P021,1,1803000,180300,Card,In-Person,Nowshahr,Returning Customer,1622700,7,Classical Literature,49,Excellent,Old Persian
+S0211,2025-12-27,C0116,P037,1,877000,0,Online,Online,Rasht,New Customer,877000,4,Classical Literature,99,Acceptable,Persian-Arabic
+S0212,2025-12-28,C0079,P022,2,545000,0,Cash,In-Person,Rasht,Returning Customer,1090000,3,Manuscript,44,Excellent,Persian-Arabic
+S0213,2025-12-30,C0117,P025,1,1764000,0,Cash,In-Person,Rasht,Returning Customer,1764000,7,Philosophy,38,Excellent,Old Persian
+S0214,2025-12-30,C0020,P017,1,873000,43650,Cash,In-Person,Rasht,New Customer,829350,4,Religious-Mystical,66,Acceptable,Persian-Arabic
+S0215,2025-12-30,C0119,P011,1,536000,0,Card,Online,Nowshahr,New Customer,536000,3,Manuscript,28,Excellent,Persian-Arabic
+S0216,2025-12-30,C0085,P014,1,1129000,0,Online,Online,Nowshahr,Returning Customer,1129000,5,Manuscript,53,Acceptable,Old Persian
+S0217,2025-12-31,C0100,P006,1,2220000,0,Online,Online,Rasht,New Customer,2220000,7,History,175,Good,Persian
+S0218,2025-12-31,C0126,P019,1,1007000,0,Card,In-Person,Rasht,Returning Customer,1007000,5,Classical Poetry,26,Good,Persian-Arabic
+S0219,2025-12-31,C0042,P004,1,1136000,0,Cash,In-Person,Nowshahr,Returning Customer,1136000,5,Religious-Mystical,105,Excellent,Persian-Arabic
+S0220,2026-01-01,C0113,P022,1,544000,0,Online,Online,Nowshahr,New Customer,544000,3,Manuscript,44,Excellent,Persian-Arabic
+S0221,2026-01-01,C0102,P035,2,2420000,0,Online,Online,Nowshahr,Returning Customer,4840000,8,History,99,Excellent,Old Persian
+S0222,2026-01-02,C0157,P011,3,534000,320400,Cash,In-Person,Rasht,Returning Customer,1281600,3,Manuscript,28,Excellent,Persian-Arabic
+S0223,2026-01-03,C0035,P030,1,2289000,457800,Online,Online,Rasht,Returning Customer,1831200,8,History,71,Acceptable,Persian-Arabic
+S0224,2026-01-03,C0089,P008,2,1742000,871000,Card,Online,Rasht,New Customer,2613000,7,Philosophy,43,Good,Persian
+S0225,2026-01-03,C0124,P031,3,1441000,0,Online,Online,Nowshahr,Returning Customer,4323000,6,Classical Literature,33,Excellent,Persian
+S0226,2026-01-05,C0101,P020,3,708000,0,Online,Online,Rasht,New Customer,2124000,3,Classical Poetry,111,Acceptable,Persian
+S0227,2026-01-06,C0083,P034,1,1982000,198200,Cash,In-Person,Rasht,Returning Customer,1783800,7,Philosophy,102,Good,Persian-Arabic
+S0228,2026-01-06,C0014,P037,1,850000,0,Online,Online,Nowshahr,Returning Customer,850000,4,Classical Literature,99,Acceptable,Persian-Arabic
+S0229,2026-01-07,C0030,P005,1,2810000,140500,Online,Online,Rasht,New Customer,2669500,9,Classical Poetry,45,Excellent,Persian
+S0230,2026-01-07,C0189,P003,1,1049000,0,Card,Online,Nowshahr,Returning Customer,1049000,5,Philosophy,27,Excellent,Old Persian
+S0231,2026-01-09,C0056,P040,1,1005000,0,Cash,In-Person,Rasht,New Customer,1005000,5,Classical Poetry,40,Excellent,Persian
+S0232,2026-01-10,C0052,P006,1,2081000,0,Online,Online,Rasht,New Customer,2081000,7,History,175,Good,Persian
+S0233,2026-01-10,C0183,P040,1,1043000,73010,Card,In-Person,Rasht,New Customer,969990,5,Classical Poetry,40,Excellent,Persian
+S0234,2026-01-11,C0098,P022,1,523000,0,Online,Online,Rasht,New Customer,523000,3,Manuscript,44,Excellent,Persian-Arabic
+S0235,2026-01-11,C0081,P007,1,800000,0,Card,In-Person,Rasht,Returning Customer,800000,4,Religious-Mystical,28,Excellent,Old Persian
+S0236,2026-01-11,C0172,P041,1,1871000,374200,Cash,In-Person,Nowshahr,New Customer,1496800,7,Philosophy,122,Good,Persian
+S0237,2026-01-11,C0006,P040,1,1087000,0,Card,In-Person,Nowshahr,Returning Customer,1087000,5,Classical Poetry,40,Excellent,Persian
+S0238,2026-01-12,C0082,P037,1,878000,87800,Online,Online,Rasht,New Customer,790200,4,Classical Literature,99,Acceptable,Persian-Arabic
+S0239,2026-01-13,C0017,P022,3,554000,0,Card,In-Person,Rasht,New Customer,1662000,3,Manuscript,44,Excellent,Persian-Arabic
+S0240,2026-01-14,C0043,P028,1,1014000,0,Online,Online,Rasht,Returning Customer,1014000,5,Philosophy,37,Good,Old Persian
+S0241,2026-01-14,C0158,P002,2,1079000,0,Online,Online,Nowshahr,Returning Customer,2158000,5,Manuscript,61,Excellent,Persian
+S0242,2026-01-14,C0122,P030,1,2300000,0,Online,Online,Rasht,Returning Customer,2300000,8,History,71,Acceptable,Persian-Arabic
+S0243,2026-01-14,C0176,P028,1,1127000,0,Card,Online,Nowshahr,New Customer,1127000,5,Philosophy,37,Good,Old Persian
+S0244,2026-01-14,C0019,P004,2,1213000,363900,Card,Online,Nowshahr,New Customer,2062100,5,Religious-Mystical,105,Excellent,Persian-Arabic
+S0245,2026-01-16,C0104,P019,1,1092000,76440,Card,In-Person,Nowshahr,Returning Customer,1015560,5,Classical Poetry,26,Good,Persian-Arabic
+S0246,2026-01-16,C0109,P008,2,1898000,0,Cash,In-Person,Rasht,New Customer,3796000,7,Philosophy,43,Good,Persian
+S0247,2026-01-17,C0147,P036,1,2473000,0,Card,In-Person,Nowshahr,Returning Customer,2473000,8,Religious-Mystical,43,Excellent,Old Persian
+S0248,2026-01-17,C0178,P029,1,762000,76200,Online,Online,Rasht,New Customer,685800,4,Manuscript,33,Acceptable,Persian
+S0249,2026-01-18,C0086,P026,1,1488000,148800,Online,Online,Nowshahr,Returning Customer,1339200,6,History,38,Excellent,Persian-Arabic
+S0250,2026-01-19,C0168,P024,1,1423000,0,Online,Online,Nowshahr,New Customer,1423000,6,Philosophy,89,Good,Old Persian
+S0251,2026-01-21,C0051,P039,1,783000,54810,Online,Online,Nowshahr,Returning Customer,728190,4,Religious-Mystical,34,Good,Persian
+S0252,2026-01-22,C0112,P029,1,735000,0,Online,Online,Rasht,Returning Customer,735000,4,Manuscript,33,Acceptable,Persian
+S0253,2026-01-23,C0172,P028,2,1048000,0,Online,Online,Nowshahr,Returning Customer,2096000,5,Philosophy,37,Good,Old Persian
+S0254,2026-01-23,C0157,P028,1,1009000,0,Online,Online,Rasht,Returning Customer,1009000,5,Philosophy,37,Good,Old Persian
+S0255,2026-01-23,C0065,P028,1,1131000,0,Card,In-Person,Nowshahr,New Customer,1131000,5,Philosophy,37,Good,Old Persian
+S0256,2026-01-25,C0061,P003,1,1108000,55400,Online,Online,Rasht,New Customer,1052600,5,Philosophy,27,Excellent,Old Persian
+S0257,2026-01-25,C0034,P018,1,1133000,0,Cash,In-Person,Rasht,Returning Customer,1133000,5,Religious-Mystical,48,Excellent,Persian
+S0258,2026-01-26,C0144,P033,1,745000,52150,Card,In-Person,Rasht,New Customer,692850,4,History,20,Good,Persian-Arabic
+S0259,2026-01-26,C0036,P031,1,1480000,0,Online,Online,Nowshahr,New Customer,1480000,6,Classical Literature,33,Excellent,Persian
+S0260,2026-01-26,C0066,P017,2,805000,112700,Card,Online,Rasht,Returning Customer,1497300,4,Religious-Mystical,66,Acceptable,Persian-Arabic
+S0261,2026-01-27,C0043,P028,1,1105000,0,Card,In-Person,Rasht,Returning Customer,1105000,5,Philosophy,37,Good,Old Persian
+S0262,2026-01-28,C0190,P032,1,1408000,0,Card,In-Person,Nowshahr,Returning Customer,1408000,5,Religious-Mystical,198,Acceptable,Persian-Arabic
+S0263,2026-01-29,C0057,P019,1,1085000,108500,Card,Online,Rasht,New Customer,976500,5,Classical Poetry,26,Good,Persian-Arabic
+S0264,2026-01-29,C0068,P006,1,2106000,0,Online,Online,Nowshahr,Returning Customer,2106000,7,History,175,Good,Persian
+S0265,2026-01-30,C0012,P001,1,1890000,0,Online,Online,Rasht,New Customer,1890000,7,Philosophy,87,Excellent,Old Persian
+S0266,2026-01-31,C0014,P016,1,1401000,210150,Online,Online,Nowshahr,Returning Customer,1190850,6,Classical Poetry,37,Good,Old Persian
+S0267,2026-01-31,C0022,P029,2,751000,0,Online,Online,Rasht,Returning Customer,1502000,4,Manuscript,33,Acceptable,Persian
+S0268,2026-01-31,C0063,P019,3,1007000,0,Card,In-Person,Rasht,New Customer,3021000,5,Classical Poetry,26,Good,Persian-Arabic
+S0269,2026-01-31,C0102,P016,1,1370000,0,Card,Online,Nowshahr,Returning Customer,1370000,6,Classical Poetry,37,Good,Old Persian
+S0270,2026-02-01,C0017,P004,1,1202000,0,Card,In-Person,Rasht,Returning Customer,1202000,5,Religious-Mystical,105,Excellent,Persian-Arabic
+S0271,2026-02-01,C0008,P028,1,1079000,0,Card,In-Person,Rasht,New Customer,1079000,5,Philosophy,37,Good,Old Persian
+S0272,2026-02-01,C0143,P020,3,668000,0,Cash,In-Person,Rasht,Returning Customer,2004000,3,Classical Poetry,111,Acceptable,Persian
+S0273,2026-02-02,C0024,P037,1,885000,0,Card,In-Person,Nowshahr,Returning Customer,885000,4,Classical Literature,99,Acceptable,Persian-Arabic
+S0274,2026-02-04,C0070,P020,1,637000,0,Card,Online,Rasht,Returning Customer,637000,3,Classical Poetry,111,Acceptable,Persian
+S0275,2026-02-04,C0125,P015,1,795000,0,Card,In-Person,Rasht,New Customer,795000,4,Classical Literature,57,Good,Persian-Arabic
+S0276,2026-02-04,C0078,P017,1,832000,0,Card,In-Person,Nowshahr,New Customer,832000,4,Religious-Mystical,66,Acceptable,Persian-Arabic
+S0277,2026-02-04,C0164,P023,2,767000,76700,Card,Online,Nowshahr,Returning Customer,1457300,3,History,154,Good,Old Persian
+S0278,2026-02-05,C0175,P032,1,1410000,0,Card,In-Person,Rasht,New Customer,1410000,5,Religious-Mystical,198,Acceptable,Persian-Arabic
+S0279,2026-02-05,C0163,P030,1,2531000,0,Online,Online,Nowshahr,New Customer,2531000,8,History,71,Acceptable,Persian-Arabic
+S0280,2026-02-05,C0137,P001,1,1858000,222960,Card,In-Person,Nowshahr,Returning Customer,1635040,7,Philosophy,87,Excellent,Old Persian
+S0281,2026-02-07,C0060,P001,1,1970000,0,Card,In-Person,Rasht,Returning Customer,1970000,7,Philosophy,87,Excellent,Old Persian
+S0282,2026-02-07,C0093,P038,3,1075000,0,Card,In-Person,Rasht,Returning Customer,3225000,5,Manuscript,64,Excellent,Persian
+S0283,2026-02-07,C0189,P039,1,721000,0,Online,Online,Nowshahr,Returning Customer,721000,4,Religious-Mystical,34,Good,Persian
+S0284,2026-02-11,C0071,P040,1,1047000,157050,Card,In-Person,Nowshahr,New Customer,889950,5,Classical Poetry,40,Excellent,Persian
+S0285,2026-02-11,C0016,P005,1,2891000,346920,Card,In-Person,Rasht,Returning Customer,2544080,9,Classical Poetry,45,Excellent,Persian
+S0286,2026-02-11,C0050,P011,1,511000,0,Cash,In-Person,Rasht,New Customer,511000,3,Manuscript,28,Excellent,Persian-Arabic
+S0287,2026-02-12,C0140,P014,1,1133000,0,Online,Online,Nowshahr,Returning Customer,1133000,5,Manuscript,53,Acceptable,Old Persian
+S0288,2026-02-12,C0038,P023,1,738000,51660,Card,In-Person,Rasht,New Customer,686340,3,History,154,Good,Old Persian
+S0289,2026-02-13,C0128,P026,2,1460000,0,Card,In-Person,Rasht,New Customer,2920000,6,History,38,Excellent,Persian-Arabic
+S0290,2026-02-14,C0025,P012,1,1423000,0,,In-Person,Rasht,New Customer,1423000,6,Classical Poetry,48,Excellent,Persian
+S0291,2026-02-15,C0170,P006,1,2008000,0,Online,Online,Rasht,Returning Customer,2008000,7,History,175,Good,Persian
+S0292,2026-02-16,C0167,P029,1,731000,109650,Card,In-Person,Rasht,New Customer,621350,4,Manuscript,33,Acceptable,Persian
+S0293,2026-02-16,C0117,P022,1,570000,0,Card,In-Person,Rasht,Returning Customer,570000,3,Manuscript,44,Excellent,Persian-Arabic
+S0294,2026-02-19,C0010,P005,1,2921000,0,Online,Online,Rasht,New Customer,2921000,9,Classical Poetry,45,Excellent,Persian
+S0295,2026-02-19,C0159,P011,1,557000,0,Cash,In-Person,Nowshahr,Returning Customer,557000,3,Manuscript,28,Excellent,Persian-Arabic
+S0296,2026-02-19,C0036,P021,1,1937000,0,Online,Online,Nowshahr,Returning Customer,1937000,7,Classical Literature,49,Excellent,Old Persian
+S0297,2026-02-20,C0142,P023,2,712000,0,Cash,In-Person,Rasht,Returning Customer,1424000,3,History,154,Good,Old Persian
+S0298,2026-02-21,C0046,P027,1,1137000,284250,Online,Online,Rasht,Returning Customer,852750,5,Manuscript,44,Acceptable,Old Persian
+S0299,2026-02-21,C0120,P025,1,1919000,0,Card,In-Person,Rasht,New Customer,1919000,7,Philosophy,38,Excellent,Old Persian
+S0300,2026-02-23,C0097,P038,1,1073000,0,Card,In-Person,Nowshahr,New Customer,1073000,5,Manuscript,64,Excellent,Persian
+S0301,2026-02-23,C0186,P010,1,251000,30120,Online,Online,Nowshahr,New Customer,220880,1,History,18,Good,Persian-Arabic
+S0302,2026-02-24,C0011,P018,1,1129000,0,Cash,In-Person,Rasht,New Customer,1129000,5,Religious-Mystical,48,Excellent,Persian
+S0303,2026-02-24,C0147,P038,1,1091000,272750,Online,Online,Nowshahr,Returning Customer,818250,5,Manuscript,64,Excellent,Persian
+S0304,2026-02-24,C0132,P011,2,545000,272500,Online,Online,Rasht,Returning Customer,817500,3,Manuscript,28,Excellent,Persian-Arabic
+S0305,2026-02-24,C0076,P012,1,1499000,0,Card,In-Person,Rasht,Returning Customer,1499000,6,Classical Poetry,48,Excellent,Persian
+S0306,2026-02-24,C0182,P018,1,1105000,0,Cash,In-Person,Rasht,New Customer,1105000,5,Religious-Mystical,48,Excellent,Persian
+S0307,2026-02-25,C0148,P005,1,2942000,205940,Online,Online,Rasht,New Customer,2736060,9,Classical Poetry,45,Excellent,Persian
+S0308,2026-02-25,C0062,P019,1,1054000,73780,Online,Online,Rasht,Returning Customer,980220,5,Classical Poetry,26,Good,Persian-Arabic
+S0309,2026-02-27,C0182,P008,2,1909000,0,Card,In-Person,Rasht,Returning Customer,3818000,7,Philosophy,43,Good,Persian
+S0310,2026-02-27,C0162,P037,1,851000,0,Card,In-Person,Rasht,Returning Customer,851000,4,Classical Literature,99,Acceptable,Persian-Arabic
+S0311,2026-02-28,C0160,P005,1,2719000,135950,,In-Person,Rasht,Returning Customer,2583050,9,Classical Poetry,45,Excellent,Persian
+S0312,2026-02-28,C0125,P027,1,1090000,0,Online,Online,Rasht,Returning Customer,1090000,5,Manuscript,44,Acceptable,Old Persian
+S0313,2026-03-01,C0115,P023,1,730000,73000,Online,Online,Nowshahr,New Customer,657000,3,History,154,Good,Old Persian
+S0314,2026-03-01,C0084,P017,1,833000,0,Online,Online,Nowshahr,New Customer,833000,4,Religious-Mystical,66,Acceptable,Persian-Arabic
+S0315,2026-03-01,C0102,P021,1,1980000,0,Card,In-Person,Nowshahr,Returning Customer,1980000,7,Classical Literature,49,Excellent,Old Persian
+S0316,2026-03-02,C0004,P007,1,772000,77200,Cash,In-Person,Rasht,New Customer,694800,4,Religious-Mystical,28,Excellent,Old Persian
+S0317,2026-03-02,C0146,P017,1,816000,0,Online,Online,Rasht,New Customer,816000,4,Religious-Mystical,66,Acceptable,Persian-Arabic
+S0318,2026-03-04,C0111,P030,1,2450000,245000,Card,In-Person,Rasht,Returning Customer,2205000,8,History,71,Acceptable,Persian-Arabic
+S0319,2026-03-04,C0171,P042,1,2267000,0,Card,In-Person,Nowshahr,New Customer,2267000,8,Classical Literature,65,Good,Persian-Arabic
+S0320,2026-03-04,C0008,P005,1,2979000,446850,Cash,In-Person,Rasht,Returning Customer,2532150,9,Classical Poetry,45,Excellent,Persian
+S0321,2026-03-05,C0014,P024,1,1471000,0,Card,Online,Nowshahr,Returning Customer,1471000,6,Philosophy,89,Good,Old Persian
+S0322,2026-03-05,C0032,P004,1,1124000,0,Online,Online,Nowshahr,Returning Customer,1124000,5,Religious-Mystical,105,Excellent,Persian-Arabic
+S0323,2026-03-06,C0059,P038,1,1068000,128160,Card,Online,Rasht,Returning Customer,939840,5,Manuscript,64,Excellent,Persian
+S0324,2026-03-07,C0143,P014,1,1053000,73710,Cash,In-Person,Rasht,Returning Customer,979290,5,Manuscript,53,Acceptable,Old Persian
+S0325,2026-03-07,C0109,P015,1,762000,76200,Card,In-Person,Rasht,Returning Customer,685800,4,Classical Literature,57,Good,Persian-Arabic
+S0326,2026-03-07,C0055,P022,1,524000,0,Online,Online,Nowshahr,Returning Customer,524000,3,Manuscript,44,Excellent,Persian-Arabic
+S0327,2026-03-08,C0024,P034,1,1894000,0,Card,In-Person,Nowshahr,Returning Customer,1894000,7,Philosophy,102,Good,Persian-Arabic
+S0328,2026-03-08,C0131,P023,2,793000,0,Online,Online,Nowshahr,Returning Customer,1586000,3,History,154,Good,Old Persian
+S0329,2026-03-08,C0133,P028,1,1067000,0,Online,Online,Nowshahr,Returning Customer,1067000,5,Philosophy,37,Good,Old Persian
+S0330,2026-03-09,C0180,P014,1,1068000,0,Card,Online,Rasht,Returning Customer,1068000,5,Manuscript,53,Acceptable,Old Persian
+S0331,2026-03-09,C0096,P028,1,1130000,0,Card,In-Person,Rasht,Returning Customer,1130000,5,Philosophy,37,Good,Old Persian
+S0332,2026-03-10,C0094,P028,2,1071000,214200,Online,Online,Rasht,Returning Customer,1927800,5,Philosophy,37,Good,Old Persian
+S0333,2026-03-10,C0016,P031,1,1406000,0,Card,In-Person,Rasht,Returning Customer,1406000,6,Classical Literature,33,Excellent,Persian
+S0334,2026-03-10,C0008,P003,1,1053000,0,Card,In-Person,Rasht,Returning Customer,1053000,5,Philosophy,27,Excellent,Old Persian
+S0335,2026-03-11,C0083,P040,1,1023000,0,Cash,In-Person,Rasht,Returning Customer,1023000,5,Classical Poetry,40,Excellent,Persian
+S0336,2026-03-12,C0062,P029,2,733000,0,Online,Online,Rasht,Returning Customer,1466000,4,Manuscript,33,Acceptable,Persian
+S0337,2026-03-12,C0048,P023,1,717000,143400,Cash,In-Person,Rasht,Returning Customer,573600,3,History,154,Good,Old Persian
+S0338,2026-03-12,C0018,P019,1,1077000,0,Online,Online,Nowshahr,Returning Customer,1077000,5,Classical Poetry,26,Good,Persian-Arabic
+S0339,2026-03-14,C0183,P015,1,824000,0,Card,In-Person,Rasht,Returning Customer,824000,4,Classical Literature,57,Good,Persian-Arabic
+S0340,2026-03-14,C0159,P034,1,2068000,0,Online,Online,Nowshahr,Returning Customer,2068000,7,Philosophy,102,Good,Persian-Arabic
+S0341,2026-03-15,C0110,P010,1,244000,0,,Online,Rasht,Returning Customer,244000,1,History,18,Good,Persian-Arabic
+S0342,2026-03-15,C0181,P007,1,801000,120150,Cash,In-Person,Rasht,Returning Customer,680850,4,Religious-Mystical,28,Excellent,Old Persian
+S0343,2026-03-17,C0190,P039,1,768000,0,Online,Online,Nowshahr,Returning Customer,768000,4,Religious-Mystical,34,Good,Persian
+S0344,2026-03-18,C0128,P036,1,2346000,234600,Card,Online,Rasht,Returning Customer,2111400,8,Religious-Mystical,43,Excellent,Old Persian
+S0345,2026-03-18,C0052,P026,1,1346000,0,Card,Online,Rasht,Returning Customer,1346000,6,History,38,Excellent,Persian-Arabic
+S0346,2026-03-20,C0008,P032,1,1291000,0,Card,In-Person,Rasht,Returning Customer,1291000,5,Religious-Mystical,198,Acceptable,Persian-Arabic
+S0347,2026-03-21,C0144,P035,3,2530000,0,Cash,In-Person,Rasht,Returning Customer,7590000,8,History,99,Excellent,Old Persian
+S0348,2026-03-21,C0090,P030,1,2249000,0,Online,Online,Nowshahr,Returning Customer,2249000,8,History,71,Acceptable,Persian-Arabic
+S0349,2026-03-22,C0124,P013,1,2822000,0,Card,In-Person,Nowshahr,Returning Customer,2822000,9,Manuscript,53,Acceptable,Old Persian
+S0350,2026-03-22,C0175,P016,1,1345000,0,Card,In-Person,Rasht,Returning Customer,1345000,6,Classical Poetry,37,Good,Old Persian
+S0351,2026-03-23,C0035,P040,1,1075000,0,Cash,In-Person,Rasht,Returning Customer,1075000,5,Classical Poetry,40,Excellent,Persian
+S0352,2026-03-23,C0112,P013,1,2872000,0,Card,In-Person,Rasht,Returning Customer,2872000,9,Manuscript,53,Acceptable,Old Persian
+S0353,2026-03-23,C0121,P019,1,1056000,0,Online,Online,Nowshahr,Returning Customer,1056000,5,Classical Poetry,26,Good,Persian-Arabic
+S0354,2026-03-23,C0094,P022,1,585000,0,Card,In-Person,Rasht,Returning Customer,585000,3,Manuscript,44,Excellent,Persian-Arabic
+S0355,2026-03-23,C0018,P021,1,1981000,0,Card,In-Person,Nowshahr,Returning Customer,1981000,7,Classical Literature,49,Excellent,Old Persian
+S0356,2026-03-25,C0067,P036,1,2252000,0,Card,Online,Nowshahr,Returning Customer,2252000,8,Religious-Mystical,43,Excellent,Old Persian
+S0357,2026-03-26,C0064,P039,1,727000,0,Card,In-Person,Rasht,Returning Customer,727000,4,Religious-Mystical,34,Good,Persian
+S0358,2026-03-27,C0128,P035,2,2405000,0,Cash,In-Person,Rasht,Returning Customer,4810000,8,History,99,Excellent,Old Persian
+S0359,2026-03-29,C0163,P037,1,925000,0,Card,In-Person,Nowshahr,Returning Customer,925000,4,Classical Literature,99,Acceptable,Persian-Arabic
+S0360,2026-03-30,C0063,P034,1,2034000,0,Online,Online,Rasht,Returning Customer,2034000,7,Philosophy,102,Good,Persian-Arabic
+S0361,2026-03-30,C0132,P013,1,2754000,0,Cash,In-Person,Rasht,Returning Customer,2754000,9,Manuscript,53,Acceptable,Old Persian
+S0362,2026-03-31,C0055,P017,2,789000,0,Online,Online,Nowshahr,Returning Customer,1578000,4,Religious-Mystical,66,Acceptable,Persian-Arabic
+S0363,2026-03-31,C0180,P029,1,747000,37350,Card,Online,Rasht,Returning Customer,709650,4,Manuscript,33,Acceptable,Persian
+S0364,2026-04-04,C0155,P041,1,2034000,0,Card,Online,Nowshahr,Returning Customer,2034000,7,Philosophy,122,Good,Persian
+S0365,2026-04-05,C0105,P035,1,2327000,0,Online,Online,Nowshahr,Returning Customer,2327000,8,History,99,Excellent,Old Persian
+S0366,2026-04-08,C0087,P037,3,931000,0,Online,Online,Rasht,Returning Customer,2793000,4,Classical Literature,99,Acceptable,Persian-Arabic
+S0367,2026-04-09,C0060,P021,1,1889000,0,Cash,In-Person,Rasht,Returning Customer,1889000,7,Classical Literature,49,Excellent,Old Persian
+S0368,2026-04-12,C0062,P032,1,1300000,325000,Cash,In-Person,Rasht,Returning Customer,975000,5,Religious-Mystical,198,Acceptable,Persian-Arabic
+S0369,2026-04-13,C0185,P021,1,1839000,0,Card,In-Person,Rasht,Returning Customer,1839000,7,Classical Literature,49,Excellent,Old Persian
+S0370,2026-04-13,C0077,P007,1,740000,111000,Card,Online,Nowshahr,Returning Customer,629000,4,Religious-Mystical,28,Excellent,Old Persian
+S0371,2026-04-14,C0098,P003,1,981000,147150,Card,Online,Rasht,Returning Customer,833850,5,Philosophy,27,Excellent,Old Persian
+S0372,2026-04-17,C0188,P006,1,2218000,0,Online,Online,Rasht,Returning Customer,2218000,7,History,175,Good,Persian
+S0373,2026-04-19,C0125,P023,1,801000,120150,Card,In-Person,Rasht,Returning Customer,680850,3,History,154,Good,Old Persian
+S0374,2026-04-20,C0104,P019,2,1017000,406800,Online,Online,Nowshahr,Returning Customer,1627200,5,Classical Poetry,26,Good,Persian-Arabic
+S0375,2026-04-22,C0079,P022,1,551000,0,Card,In-Person,Rasht,Returning Customer,551000,3,Manuscript,44,Excellent,Persian-Arabic
+S0376,2026-04-23,C0036,P005,2,2948000,589600,Cash,In-Person,Nowshahr,Returning Customer,5306400,9,Classical Poetry,45,Excellent,Persian
+S0377,2026-04-24,C0069,P010,1,251000,0,Online,Online,Rasht,Returning Customer,251000,1,History,18,Good,Persian-Arabic
+S0378,2026-04-24,C0144,P028,2,1015000,0,Cash,In-Person,Rasht,Returning Customer,2030000,5,Philosophy,37,Good,Old Persian
+S0379,2026-04-25,C0119,P003,1,1082000,75740,Online,Online,Nowshahr,Returning Customer,1006260,5,Philosophy,27,Excellent,Old Persian
+S0380,2026-04-25,C0145,P020,2,640000,0,Online,Online,Rasht,Returning Customer,1280000,3,Classical Poetry,111,Acceptable,Persian
+S0381,2026-04-25,C0039,P042,1,2245000,0,Cash,In-Person,Rasht,Returning Customer,2245000,8,Classical Literature,65,Good,Persian-Arabic
+S0382,2026-04-26,C0105,P029,3,809000,0,Online,Online,Nowshahr,Returning Customer,2427000,4,Manuscript,33,Acceptable,Persian
+S0383,2026-04-28,C0177,P011,1,502000,0,Online,Online,Nowshahr,Returning Customer,502000,3,Manuscript,28,Excellent,Persian-Arabic
+S0384,2026-05-01,C0084,P006,1,2041000,0,Card,In-Person,Nowshahr,Returning Customer,2041000,7,History,175,Good,Persian
+S0385,2026-05-01,C0133,P005,1,2967000,207690,Card,In-Person,Nowshahr,Returning Customer,2759310,9,Classical Poetry,45,Excellent,Persian
+S0386,2026-05-01,C0024,P003,1,1046000,0,Card,Online,Nowshahr,Returning Customer,1046000,5,Philosophy,27,Excellent,Old Persian
+S0387,2026-05-02,C0185,P042,1,2476000,0,Card,In-Person,Rasht,Returning Customer,2476000,8,Classical Literature,65,Good,Persian-Arabic
+S0388,2026-05-02,C0116,P026,1,1386000,138600,Card,In-Person,Rasht,Returning Customer,1247400,6,History,38,Excellent,Persian-Arabic
+S0389,2026-05-03,C0046,P026,1,1426000,0,Card,In-Person,Rasht,Returning Customer,1426000,6,History,38,Excellent,Persian-Arabic
+S0390,2026-05-04,C0031,P018,3,1031000,0,Card,In-Person,Nowshahr,Returning Customer,3093000,5,Religious-Mystical,48,Excellent,Persian
+S0391,2026-05-05,C0105,P038,2,1104000,0,Online,Online,Nowshahr,Returning Customer,2208000,5,Manuscript,64,Excellent,Persian
+S0392,2026-05-07,C0105,P009,1,1423000,142300,Online,Online,Nowshahr,Returning Customer,1280700,6,Classical Literature,52,Good,Persian
+S0393,2026-05-07,C0018,P018,1,1127000,0,Online,Online,Nowshahr,Returning Customer,1127000,5,Religious-Mystical,48,Excellent,Persian
+S0394,2026-05-09,C0189,P031,1,1461000,365250,Online,Online,Nowshahr,Returning Customer,1095750,6,Classical Literature,33,Excellent,Persian
+S0395,2026-05-09,C0174,P001,2,1913000,459120,Cash,In-Person,Nowshahr,Returning Customer,3366880,7,Philosophy,87,Excellent,Old Persian
+S0396,2026-05-10,C0088,P020,1,636000,0,Card,Online,Rasht,Returning Customer,636000,3,Classical Poetry,111,Acceptable,Persian
+S0397,2026-05-11,C0023,P011,1,543000,0,Card,Online,Rasht,Returning Customer,543000,3,Manuscript,28,Excellent,Persian-Arabic
+S0398,2026-05-11,C0159,P007,1,757000,151400,Card,Online,Nowshahr,Returning Customer,605600,4,Religious-Mystical,28,Excellent,Old Persian
+S0399,2026-05-11,C0095,P010,1,232000,0,Cash,In-Person,Rasht,Returning Customer,232000,1,History,18,Good,Persian-Arabic
+S0400,2026-05-11,C0137,P011,1,558000,66960,Card,Online,Nowshahr,Returning Customer,491040,3,Manuscript,28,Excellent,Persian-Arabic
+S0401,2026-05-13,C0097,P034,1,2076000,0,Card,Online,Nowshahr,Returning Customer,2076000,7,Philosophy,102,Good,Persian-Arabic
+S0402,2026-05-14,C0052,P021,1,1770000,0,Card,In-Person,Rasht,Returning Customer,1770000,7,Classical Literature,49,Excellent,Old Persian
+S0403,2026-05-14,C0159,P023,1,752000,188000,Card,Online,Nowshahr,Returning Customer,564000,3,History,154,Good,Old Persian
+S0404,2026-05-14,C0187,P036,2,2219000,1109500,Card,In-Person,Rasht,Returning Customer,3328500,8,Religious-Mystical,43,Excellent,Old Persian
+S0405,2026-05-14,C0047,P021,1,1780000,0,Card,Online,Nowshahr,Returning Customer,1780000,7,Classical Literature,49,Excellent,Old Persian
+S0406,2026-05-14,C0105,P014,1,1124000,112400,Online,Online,Nowshahr,Returning Customer,1011600,5,Manuscript,53,Acceptable,Old Persian
+S0407,2026-05-15,C0073,P020,1,667000,0,Online,Online,Rasht,Returning Customer,667000,3,Classical Poetry,111,Acceptable,Persian
+S0408,2026-05-15,C0176,P017,1,819000,204750,Card,Online,Nowshahr,Returning Customer,614250,4,Religious-Mystical,66,Acceptable,Persian-Arabic
+S0409,2026-05-16,C0097,P033,1,776000,0,Online,Online,Nowshahr,Returning Customer,776000,4,History,20,Good,Persian-Arabic
+S0410,2026-05-16,C0168,P040,1,1107000,166050,Card,In-Person,Nowshahr,Returning Customer,940950,5,Classical Poetry,40,Excellent,Persian
+S0411,2026-05-17,C0165,P014,1,1117000,0,Online,Online,Nowshahr,Returning Customer,1117000,5,Manuscript,53,Acceptable,Old Persian
+S0412,2026-05-19,C0053,P019,1,1010000,0,Online,Online,Rasht,Returning Customer,1010000,5,Classical Poetry,26,Good,Persian-Arabic
+S0413,2026-05-19,C0151,P036,1,2201000,550250,Online,Online,Rasht,Returning Customer,1650750,8,Religious-Mystical,43,Excellent,Old Persian
+S0414,2026-05-19,C0079,P038,1,1106000,0,Card,In-Person,Rasht,Returning Customer,1106000,5,Manuscript,64,Excellent,Persian
+S0415,2026-05-20,C0178,P027,3,1097000,0,Card,In-Person,Rasht,Returning Customer,3291000,5,Manuscript,44,Acceptable,Old Persian
+S0416,2026-05-21,C0097,P038,2,1131000,0,Cash,In-Person,Nowshahr,Returning Customer,2262000,5,Manuscript,64,Excellent,Persian
+S0417,2026-05-21,C0156,P026,1,1342000,0,Online,Online,Rasht,Returning Customer,1342000,6,History,38,Excellent,Persian-Arabic
+S0418,2026-05-21,C0054,P022,1,530000,26500,Card,In-Person,Nowshahr,Returning Customer,503500,3,Manuscript,44,Excellent,Persian-Arabic
+S0419,2026-05-21,C0057,P031,1,1414000,282800,Online,Online,Rasht,Returning Customer,1131200,6,Classical Literature,33,Excellent,Persian
+S0420,2026-05-22,C0112,P029,1,718000,107700,Card,In-Person,Rasht,Returning Customer,610300,4,Manuscript,33,Acceptable,Persian
+S0421,2026-05-23,C0190,P004,1,1219000,85330,Card,In-Person,Nowshahr,Returning Customer,1133670,5,Religious-Mystical,105,Excellent,Persian-Arabic
+S0422,2026-05-23,C0094,P004,1,1121000,0,Card,In-Person,Rasht,Returning Customer,1121000,5,Religious-Mystical,105,Excellent,Persian-Arabic
+S0423,2026-05-24,C0029,P001,1,2047000,245640,Online,Online,Rasht,Returning Customer,1801360,7,Philosophy,87,Excellent,Old Persian
+S0424,2026-05-26,C0103,P031,1,1385000,166200,Card,Online,Nowshahr,Returning Customer,1218800,6,Classical Literature,33,Excellent,Persian
+S0425,2026-05-26,C0066,P013,1,2854000,0,Online,Online,Rasht,Returning Customer,2854000,9,Manuscript,53,Acceptable,Old Persian
+S0426,2026-05-27,C0105,P033,1,754000,37700,Cash,In-Person,Nowshahr,Returning Customer,716300,4,History,20,Good,Persian-Arabic
+S0427,2026-05-27,C0104,P009,1,1387000,0,Online,Online,Nowshahr,Returning Customer,1387000,6,Classical Literature,52,Good,Persian
+S0428,2026-05-27,C0087,P005,1,2955000,0,Cash,In-Person,Rasht,Returning Customer,2955000,9,Classical Poetry,45,Excellent,Persian
+S0429,2026-05-27,C0062,P032,1,1315000,328750,Online,Online,Rasht,Returning Customer,986250,5,Religious-Mystical,198,Acceptable,Persian-Arabic
+S0430,2026-05-27,C0036,P001,1,1830000,0,Online,Online,Nowshahr,Returning Customer,1830000,7,Philosophy,87,Excellent,Old Persian
+S0431,2026-05-28,C0133,P041,1,1945000,486250,Online,Online,Nowshahr,Returning Customer,1458750,7,Philosophy,122,Good,Persian
+S0432,2026-05-28,C0109,P033,1,751000,112650,Card,In-Person,Rasht,Returning Customer,638350,4,History,20,Good,Persian-Arabic
+S0433,2026-05-28,C0045,P017,1,792000,198000,Card,In-Person,Rasht,Returning Customer,594000,4,Religious-Mystical,66,Acceptable,Persian-Arabic
+S0434,2026-05-28,C0148,P006,1,2125000,0,Cash,In-Person,Rasht,Returning Customer,2125000,7,History,175,Good,Persian
+S0435,2026-05-29,C0009,P033,2,753000,0,Online,Online,Nowshahr,Returning Customer,1506000,4,History,20,Good,Persian-Arabic
+S0436,2026-05-29,C0142,P022,1,523000,62760,Online,Online,Rasht,Returning Customer,460240,3,Manuscript,44,Excellent,Persian-Arabic
+S0437,2026-05-29,C0134,P041,2,2074000,0,Cash,In-Person,Rasht,Returning Customer,4148000,7,Philosophy,122,Good,Persian
+S0438,2026-06-02,C0155,P013,1,3089000,463350,Online,Online,Nowshahr,Returning Customer,2625650,9,Manuscript,53,Acceptable,Old Persian
+S0439,2026-06-02,C0074,P025,1,1863000,0,Card,Online,Nowshahr,Returning Customer,1863000,7,Philosophy,38,Excellent,Old Persian
+S0440,2026-06-02,C0127,P032,1,1410000,0,Card,Online,Nowshahr,Returning Customer,1410000,5,Religious-Mystical,198,Acceptable,Persian-Arabic
+S0441,2026-06-03,C0156,P028,1,1012000,151800,Cash,In-Person,Rasht,Returning Customer,860200,5,Philosophy,37,Good,Old Persian
+S0442,2026-06-03,C0187,P015,3,851000,0,Card,In-Person,Rasht,Returning Customer,2553000,4,Classical Literature,57,Good,Persian-Arabic
+S0443,2026-06-04,C0095,P010,1,244000,0,Card,Online,Rasht,Returning Customer,244000,1,History,18,Good,Persian-Arabic
+S0444,2026-06-04,C0008,P019,1,1034000,0,Online,Online,Rasht,Returning Customer,1034000,5,Classical Poetry,26,Good,Persian-Arabic
+S0445,2026-06-05,C0096,P026,1,1502000,375500,Online,Online,Rasht,Returning Customer,1126500,6,History,38,Excellent,Persian-Arabic
+S0446,2026-06-05,C0113,P011,1,500000,75000,Online,Online,Nowshahr,Returning Customer,425000,3,Manuscript,28,Excellent,Persian-Arabic
+S0447,2026-06-05,C0166,P009,3,1519000,0,Cash,In-Person,Rasht,Returning Customer,4557000,6,Classical Literature,52,Good,Persian
+S0448,2026-06-05,C0167,P027,1,1045000,261250,,In-Person,Rasht,Returning Customer,783750,5,Manuscript,44,Acceptable,Old Persian
+S0449,2026-06-06,C0084,P034,1,2052000,0,Card,Online,Nowshahr,Returning Customer,2052000,7,Philosophy,102,Good,Persian-Arabic
+S0450,2026-06-06,C0100,P036,1,2465000,0,Cash,In-Person,Rasht,Returning Customer,2465000,8,Religious-Mystical,43,Excellent,Old Persian
+S0451,2026-06-07,C0087,P011,1,543000,0,Cash,In-Person,Rasht,Returning Customer,543000,3,Manuscript,28,Excellent,Persian-Arabic
+S0452,2026-06-08,C0138,P020,1,708000,0,Card,In-Person,Rasht,Returning Customer,708000,3,Classical Poetry,111,Acceptable,Persian
+S0453,2026-06-09,C0078,P031,1,1462000,73100,Online,Online,Nowshahr,Returning Customer,1388900,6,Classical Literature,33,Excellent,Persian
+S0454,2026-06-10,C0125,P028,1,1019000,50950,Cash,In-Person,Rasht,Returning Customer,968050,5,Philosophy,37,Good,Old Persian
+S0455,2026-06-12,C0030,P023,1,803000,0,Card,In-Person,Rasht,Returning Customer,803000,3,History,154,Good,Old Persian
+S0456,2026-06-13,C0090,P040,1,1005000,50250,Cash,In-Person,Nowshahr,Returning Customer,954750,5,Classical Poetry,40,Excellent,Persian
+S0457,2026-06-13,C0185,P008,1,1765000,0,Online,Online,Rasht,Returning Customer,1765000,7,Philosophy,43,Good,Persian
+S0458,2026-06-14,C0065,P031,2,1469000,587600,Cash,In-Person,Nowshahr,Returning Customer,2350400,6,Classical Literature,33,Excellent,Persian
+S0459,2026-06-17,C0132,P010,1,248000,0,Cash,In-Person,Rasht,Returning Customer,248000,1,History,18,Good,Persian-Arabic
+S0460,2026-06-17,C0124,P036,1,2409000,0,Online,Online,Nowshahr,Returning Customer,2409000,8,Religious-Mystical,43,Excellent,Old Persian
+S0461,2026-06-17,C0162,P023,1,765000,0,Online,Online,Rasht,Returning Customer,765000,3,History,154,Good,Old Persian
+S0462,2026-06-18,C0162,P022,1,541000,0,Card,In-Person,Rasht,Returning Customer,541000,3,Manuscript,44,Excellent,Persian-Arabic
+S0463,2026-06-19,C0164,P024,2,1551000,620400,Card,In-Person,Nowshahr,Returning Customer,2481600,6,Philosophy,89,Good,Old Persian
+S0464,2026-06-19,C0073,P037,1,898000,0,Cash,In-Person,Rasht,Returning Customer,898000,4,Classical Literature,99,Acceptable,Persian-Arabic
+S0465,2026-06-21,C0061,P032,1,1297000,0,Online,Online,Rasht,Returning Customer,1297000,5,Religious-Mystical,198,Acceptable,Persian-Arabic
+S0466,2026-06-21,C0137,P020,2,635000,0,Cash,In-Person,Nowshahr,Returning Customer,1270000,3,Classical Poetry,111,Acceptable,Persian
+S0467,2026-06-22,C0145,P011,1,541000,0,Online,Online,Rasht,Returning Customer,541000,3,Manuscript,28,Excellent,Persian-Arabic
+S0468,2026-06-23,C0166,P042,1,2258000,0,Online,Online,Rasht,Returning Customer,2258000,8,Classical Literature,65,Good,Persian-Arabic
+S0469,2026-06-24,C0007,P017,2,855000,205200,Card,In-Person,Rasht,Returning Customer,1504800,4,Religious-Mystical,66,Acceptable,Persian-Arabic
+S0470,2026-06-26,C0013,P009,1,1458000,145800,Card,In-Person,Nowshahr,Returning Customer,1312200,6,Classical Literature,52,Good,Persian
+S0471,2026-06-26,C0120,P031,1,1433000,171960,Card,Online,Rasht,Returning Customer,1261040,6,Classical Literature,33,Excellent,Persian
+S0472,2026-06-28,C0175,P009,2,1421000,0,Card,In-Person,Rasht,Returning Customer,2842000,6,Classical Literature,52,Good,Persian
+S0473,2026-06-29,C0190,P033,2,744000,0,Online,Online,Nowshahr,Returning Customer,1488000,4,History,20,Good,Persian-Arabic
+S0474,2026-06-30,C0142,P001,1,1998000,0,Card,In-Person,Rasht,Returning Customer,1998000,7,Philosophy,87,Excellent,Old Persian
+S0475,2026-07-01,C0083,P002,1,1141000,114100,Card,In-Person,Rasht,Returning Customer,1026900,5,Manuscript,61,Excellent,Persian
+S0476,2026-07-01,C0019,P009,2,1532000,766000,Card,In-Person,Nowshahr,Returning Customer,2298000,6,Classical Literature,52,Good,Persian
+S0477,2026-07-02,C0121,P016,1,1389000,0,Online,Online,Nowshahr,Returning Customer,1389000,6,Classical Poetry,37,Good,Old Persian
+S0478,2026-07-02,C0166,P007,1,734000,183500,Card,In-Person,Rasht,Returning Customer,550500,4,Religious-Mystical,28,Excellent,Old Persian
+S0479,2026-07-04,C0085,P037,1,939000,0,Online,Online,Nowshahr,Returning Customer,939000,4,Classical Literature,99,Acceptable,Persian-Arabic
+S0480,2026-07-09,C0132,P016,1,1411000,0,Online,Online,Rasht,Returning Customer,1411000,6,Classical Poetry,37,Good,Old Persian
+S0481,2026-07-09,C0172,P031,1,1482000,296400,Card,In-Person,Nowshahr,Returning Customer,1185600,6,Classical Literature,33,Excellent,Persian
+S0482,2026-07-10,C0009,P025,1,1818000,0,Online,Online,Nowshahr,Returning Customer,1818000,7,Philosophy,38,Excellent,Old Persian
+S0483,2026-07-11,C0152,P018,1,1109000,277250,Online,Online,Nowshahr,Returning Customer,831750,5,Religious-Mystical,48,Excellent,Persian
+S0484,2026-07-14,C0056,P001,1,1963000,0,Cash,In-Person,Rasht,Returning Customer,1963000,7,Philosophy,87,Excellent,Old Persian
+S0485,2026-07-14,C0072,P015,1,837000,0,Cash,In-Person,Rasht,Returning Customer,837000,4,Classical Literature,57,Good,Persian-Arabic
+S0486,2026-07-14,C0028,P004,1,1200000,240000,Card,Online,Rasht,Returning Customer,960000,5,Religious-Mystical,105,Excellent,Persian-Arabic
+S0487,2026-07-14,C0101,P020,2,690000,96600,Online,Online,Rasht,Returning Customer,1283400,3,Classical Poetry,111,Acceptable,Persian
+S0488,2026-07-17,C0108,P003,1,1055000,0,Online,Online,Rasht,Returning Customer,1055000,5,Philosophy,27,Excellent,Old Persian
+S0489,2026-07-21,C0151,P024,1,1526000,0,Online,Online,Rasht,Returning Customer,1526000,6,Philosophy,89,Good,Old Persian
+S0490,2026-07-22,C0033,P026,1,1453000,101710,Card,In-Person,Nowshahr,Returning Customer,1351290,6,History,38,Excellent,Persian-Arabic
+S0491,2026-07-23,C0016,P034,1,1903000,0,Cash,In-Person,Rasht,Returning Customer,1903000,7,Philosophy,102,Good,Persian-Arabic
+S0492,2026-07-23,C0166,P035,1,2442000,0,Online,Online,Rasht,Returning Customer,2442000,8,History,99,Excellent,Old Persian
+S0493,2026-07-23,C0118,P004,1,1119000,0,Online,Online,Nowshahr,Returning Customer,1119000,5,Religious-Mystical,105,Excellent,Persian-Arabic
+S0494,2026-07-23,C0046,P015,1,836000,41800,Online,Online,Rasht,Returning Customer,794200,4,Classical Literature,57,Good,Persian-Arabic
+S0495,2026-07-24,C0174,P030,1,2480000,0,Online,Online,Nowshahr,Returning Customer,2480000,8,History,71,Acceptable,Persian-Arabic
+S0496,2026-07-25,C0028,P022,1,551000,0,Card,In-Person,Rasht,Returning Customer,551000,3,Manuscript,44,Excellent,Persian-Arabic
+S0497,2026-07-27,C0088,P007,1,737000,0,Cash,In-Person,Rasht,Returning Customer,737000,4,Religious-Mystical,28,Excellent,Old Persian
+S0498,2026-07-30,C0049,P019,1,987000,0,Card,Online,Rasht,Returning Customer,987000,5,Classical Poetry,26,Good,Persian-Arabic
+S0499,2026-07-30,C0049,P010,1,251000,0,Online,Online,Rasht,Returning Customer,251000,1,History,18,Good,Persian-Arabic
+S0500,2026-07-31,C0002,P031,1,1502000,105140,Online,Online,Nowshahr,Returning Customer,1396860,6,Classical Literature,33,Excellent,Persian
