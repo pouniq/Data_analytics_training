@@ -411,6 +411,9 @@ SELECT location,MIN(age), MAX(age), COUNT(*) FROM users GROUP BY location;
 داده ها در فایل `sales.csv` قرار دارد.
 
 
+قیمت ها براساس ریال است.
+
+
 1. ليست تمام خريدهايي كه به صورت آنلاين انجام شده اند را نمايش دهيد.
 
 
