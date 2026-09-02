@@ -1,0 +1,403 @@
+==========================================================================
+BUSINESS SPECIFICATION FILE — SYNTHETIC DATASET GENERATION
+Business: Kohannegar (Rare & Unique Bookstore)
+Purpose: Input specification for a Python data-generation script.
+Target DB: MySQL
+Language of generated data: English only (to avoid charset issues)
+==========================================================================
+
+--------------------------------------------------------------------------
+0. BUSINESS OVERVIEW
+--------------------------------------------------------------------------
+Name: Kohannegar
+Type: Retailer of unique / rare books and related art collectibles
+Cities of operation: Rasht, Nowshahr, Bandar Anzali
+Target audience: Men and women, age 30-50
+Sales channels: "online", "in_person"
+Main product lines: poetry books, historical books, paintings,
+    photography books, single-artist collection books
+Product price range: 1,000,000 to 250,000,000 (currency units, e.g. IRR)
+Recurring promotion: a 15% discount is applied store-wide at the end of
+    every 2nd calendar month (i.e. end of Feb, Apr, Jun, Aug, Oct, Dec)
+
+--------------------------------------------------------------------------
+1. TABLE: categories  (~30 rows)
+--------------------------------------------------------------------------
+Fields: id, title, parent_id
+
+Rules:
+- Generate 6 top-level (parent_id = NULL) categories:
+    1. Poetry Books
+    2. Historical Books
+    3. Paintings
+    4. Photography Books
+    5. Artist Collection Books
+    6. Rare Manuscripts
+- Generate 3-5 sub-categories under each top-level category (parent_id =
+  the top-level category's id), totalling ~24 sub-categories, for a grand
+  total of ~30 rows. Examples:
+    Poetry Books -> Classical Persian Poetry, Contemporary Poetry,
+        Translated World Poetry, Illustrated Poetry Editions
+    Historical Books -> Ancient Persia, Islamic Era History,
+        Modern Iranian History, World History, Local/Regional History
+    Paintings -> Miniature Reproductions, Oil Painting Books,
+        Watercolor Collections, Calligraphy Art
+    Photography Books -> Black & White Photography, Landscape Photography,
+        Portrait Photography, Documentary Photography
+    Artist Collection Books -> Single-Artist Retrospectives,
+        Limited Edition Artist Sets, Signed Artist Collections
+    Rare Manuscripts -> Antique Reprints, Facsimile Editions,
+        Numbered Collector Editions
+- Assign each category an approximate popularity weight (not stored as a
+  DB column, but used internally by the generator to bias product sales
+  volume): assign weights on a 1-10 scale as follows:
+    Classical Persian Poetry: 9
+    Illustrated Poetry Editions: 8
+    Ancient Persia: 7
+    Islamic Era History: 6
+    Single-Artist Retrospectives: 8
+    Limited Edition Artist Sets: 5
+    Black & White Photography: 6
+    Landscape Photography: 7
+    Numbered Collector Editions: 4
+    Calligraphy Art: 5
+    (all remaining categories: default weight 5, +/-1 random jitter)
+  Top-level categories inherit the average popularity weight of their
+  sub-categories for reporting purposes.
+
+--------------------------------------------------------------------------
+2. TABLE: products  (~200 rows)
+--------------------------------------------------------------------------
+Fields: id, title, detail, price, category (category_id)
+
+Rules:
+- Distribute ~200 products across the ~24 sub-categories, roughly
+  proportional to each sub-category's popularity weight (higher weight =
+  more products, range 5-12 products per sub-category).
+- Price range per product type (uniform-random within range, then rounded
+  to nearest 10,000):
+    Poetry Books:              1,000,000  -  15,000,000
+    Historical Books:          2,000,000  -  30,000,000
+    Paintings:                 5,000,000  -  120,000,000
+    Photography Books:         3,000,000  -  40,000,000
+    Artist Collection Books:  10,000,000  -  180,000,000
+    Rare Manuscripts:         20,000,000  - 250,000,000
+- title: generate as "<Adjective> <Noun/Theme> <Type>" combinations in
+  English, e.g. "Golden Age Persian Verses", "Silk Road Chronicles",
+  "Anzali Coastal Reflections" (photography), "Miniature Masters Vol. 3".
+  Ensure titles are unique.
+- detail: 1-3 sentence English description referencing the category theme.
+- Sales-tier assignment (used to bias order_detail generation, not a DB
+  column): assign each product to one tier:
+    "bestseller"  : 10% of products  (~20 products) - appear in ~40% of
+                    all order lines
+    "mid_seller"  : 55% of products (~110 products) - appear in ~55% of
+                    all order lines
+    "low_seller"  : 35% of products  (~70 products) - appear in ~5% of
+                    all order lines
+  Bestsellers should be concentrated in high-popularity sub-categories
+  (Classical Persian Poetry, Single-Artist Retrospectives, Landscape
+  Photography). Low sellers concentrated in Numbered Collector Editions
+  and Limited Edition Artist Sets (naturally rare/expensive items sell
+  less often).
+
+--------------------------------------------------------------------------
+3. TABLE: users  (~1500 rows)
+--------------------------------------------------------------------------
+Fields: id, first_name, last_name, user_name, password, birth_date,
+        city, register_date, disabled
+
+Rules:
+- Names: generate realistic English-transliterated Persian first/last
+  names (e.g. "Ali Rezaei", "Sara Mohammadi") from a pool of ~60 first
+  names and ~60 last names, combined randomly with de-duplication of
+  user_name.
+- user_name: lowercase first_name.last_name + optional 2-digit number to
+  ensure uniqueness.
+- password: generate a random 10-character alphanumeric placeholder
+  string (this is synthetic data, not a real password).
+- birth_date: age distribution centered on the 30-50 target audience but
+  with a realistic spread:
+    18-29 years old: 15%
+    30-39 years old: 40%
+    40-50 years old: 35%
+    51-65 years old: 10%
+- city distribution:
+    Rasht:          55%
+    Nowshahr:       25%
+    Bandar Anzali:  20%
+- register_date: random date between 2021-01-01 and 2026-08-01, weighted
+  so that ~40% of registrations fall in the most recent 12 months
+  (business growth trend). Distribute non-uniformly across months with a
+  mild seasonal bump in autumn (Sep-Nov, back-to-school/reading season)
+  and December (gift-buying season).
+- disabled (active/inactive flag):
+    Active (disabled = 0):   88%
+    Inactive (disabled = 1): 12%
+- Repeat-customer flag (internal use, not a DB column): mark ~35% of
+  users as "repeat customers" who will be biased toward generating
+  multiple orders (see Orders section); the remaining 65% are "one-time
+  or rare" customers.
+
+--------------------------------------------------------------------------
+4. TABLE: roles  (fixed, small)
+--------------------------------------------------------------------------
+Fields: id, title
+Generate exactly 3 rows:
+    1. "admin"
+    2. "staff"
+    3. "customer"
+
+--------------------------------------------------------------------------
+5. TABLE: roles_user  (mapping)
+--------------------------------------------------------------------------
+Fields: role_id, user_id
+Rules:
+- Every user gets exactly one "customer" role row.
+- Additionally assign the "staff" role to 8-12 randomly chosen users.
+- Additionally assign the "admin" role to 2-3 randomly chosen users
+  (may overlap with staff).
+
+--------------------------------------------------------------------------
+6. TABLE: orders  (~7000 rows)
+--------------------------------------------------------------------------
+Fields: id, user_id, order_date, sales_channel, was_paid
+
+Rules:
+- user_id: must reference an existing users.id.
+  - Repeat customers (35% of users, see above) should generate 3-15
+    orders each.
+  - Non-repeat customers generate 0-2 orders each.
+  - This naturally produces the ~7000 total order count; adjust random
+    draw counts so the total lands close to 7000.
+- order_date: must be >= that user's register_date. Distribute orders
+  across the last 12 months of the business's timeline (2025-09 through
+  2026-08, or align with register_date range) following this monthly
+  weighting (relative index, normalize to sum to 7000):
+    Jan: 0.9x   Feb: 1.3x (pre-discount-end bump)   Mar: 0.8x
+    Apr: 1.0x   May: 0.9x   Jun: 1.3x (pre-discount-end bump)
+    Jul: 0.8x   Aug: 0.9x   Sep: 1.1x (back-to-reading season)
+    Oct: 1.0x   Nov: 1.2x (pre-discount-end bump)   Dec: 1.6x
+        (year-end gifting + discount month, highest volume)
+  Best-selling months: December, June, February, November.
+  Slowest months: March, July, May.
+  Within each month, bias order_date toward the last 3-4 days of the
+  month slightly more heavily for Feb/Apr/Jun/Aug/Oct/Dec (the discount
+  months), reflecting customers timing purchases around the 15% discount.
+- Day-of-week distribution: weekends in Iran are Thursday/Friday.
+  Weight: Thursday 1.4x, Friday 1.6x, all other days 1.0x (baseline).
+- sales_channel: "online" 65%, "in_person" 35%.
+- was_paid: 92% "paid" (1), 8% "unpaid/pending" (0). Unpaid orders
+  should NOT receive a corresponding payments row.
+
+--------------------------------------------------------------------------
+7. TABLE: order_detail2  (~20000 rows)
+--------------------------------------------------------------------------
+Fields: order_id, product_id, detail_id (row's own primary key / line id),
+        quantity, price
+
+Rules:
+- Every order gets 1-6 line items, averaging ~2.85 items/order (so that
+  7000 orders x ~2.85 ≈ 20000 rows). Distribution of items-per-order:
+    1 item:  30%
+    2 items: 30%
+    3 items: 20%
+    4 items: 12%
+    5 items: 6%
+    6 items: 2%
+- product_id: MUST be selected only from existing products.id. Selection
+  probability per line item follows the product's sales tier:
+    bestseller products share  40% of total line-item picks
+    mid_seller products share  55% of total line-item picks
+    low_seller products share   5% of total line-item picks
+  (i.e., sample tier first using these weights, then sample uniformly
+  within the chosen tier's product pool)
+- Seasonal affinity: Photography Books (esp. Landscape Photography,
+  themed around the coastal cities Nowshahr/Bandar Anzali) sell ~1.5x
+  more in Apr-Jun and Aug-Sep (spring/summer/tourist season). Poetry
+  Books sell more evenly year-round but get a ~1.3x bump in Oct-Dec
+  (Yalda/winter reading season). Historical & Rare Manuscript items are
+  relatively flat year-round.
+- quantity: 1 unit in 80% of line items, 2 units in 15%, 3+ units in 5%
+  (max 5). Paintings and Rare Manuscripts should almost always be
+  quantity = 1 (unique/rare items).
+- price: copy the product's current unit price at time of the line item
+  (do not invent a different price; this keeps order_detail2 consistent
+  with products.price). If the order falls within a discount period
+  (see Discounts section), this field may store the pre-discount unit
+  price; discount effect is applied at the payments level.
+
+--------------------------------------------------------------------------
+8. TABLE: payments  (~6000 rows)
+--------------------------------------------------------------------------
+Fields: id, order_id, payment_code, payment_date, payment_type,
+        total_price, discount_id, discount_price, total_amount
+
+Rules:
+- Exactly one payments row per order where orders.was_paid = 1 (this
+  naturally yields ~6000-6440 rows given the 92% paid rate on 7000
+  orders; adjust sampling so total lands close to 6000).
+- order_id: must reference an existing paid order.
+- payment_date: must be >= the order's order_date, offset by 0-3 days
+  (uniform random), reflecting near-immediate payment confirmation.
+- payment_type distribution:
+    "card"            55%
+    "cash"            25% (in_person orders only)
+    "bank_transfer"   15%
+    "online_gateway"  5%  (online orders only)
+- payment_code: random 12-character alphanumeric synthetic transaction
+  code, unique per row.
+- total_price: sum of (quantity * price) across that order's
+  order_detail2 rows.
+- discount_id: NULL for ~65% of payments. For the remaining ~35%, assign
+  an active discount_id whose active_date/expire_date window contains
+  the order_date (see Discounts section). Orders placed in the last 3-4
+  days of Feb/Apr/Jun/Aug/Oct/Dec should have discount_id populated at a
+  much higher rate (~80%), consistent with the recurring 15%
+  end-of-bimonth promotion.
+- discount_price: if discount_id is NULL, = 0. Otherwise = total_price *
+  discount.percentage (see Discounts table), rounded to nearest 1,000.
+- total_amount: MUST always equal total_price - discount_price. This is
+  a hard consistency rule enforced by the generator, not sampled
+  independently.
+
+--------------------------------------------------------------------------
+9. TABLE: discount  (~30 rows)
+--------------------------------------------------------------------------
+Fields: id, title, discount_code, active_date, expire_date
+
+Rules:
+- Recurring bimonthly promotion (the core, most-used discount): generate
+  one row for each end-of-bimonth window across the dataset's ~12-24
+  month timeline (Feb, Apr, Jun, Aug, Oct, Dec of each covered year).
+  Each row:
+    title: "End of <Month> 15% Storewide Discount"
+    percentage (implied by title, store as 15 if a numeric column is
+        added, otherwise encode in title/detail): 15%
+    active_date: the 25th of that month
+    expire_date: the last day of that month
+  This produces roughly 6-12 rows depending on how many years the
+  dataset spans.
+- Remaining ~18-24 rows: smaller occasion-based / category-specific
+  discounts, varied:
+    - "Yalda Night Poetry Special" (10-20%, active ~Dec 15-21)
+    - "Nowruz New Year Gift Discount" (10-15%, active ~Mar 15-Apr 3)
+    - "New Customer Welcome Discount" (5-10%, no fixed month, evergreen,
+      i.e. active_date/expire_date spans the whole dataset range)
+    - "Rare Manuscript Collector Days" (5-10%, short 3-5 day windows,
+      2-3 times/year)
+    - "Photography Book Summer Sale" (10-20%, active Jun-Aug)
+    - A handful (5-8) of one-off small discounts (5-15%) scattered
+      through the year with short 3-7 day validity windows, purely for
+      dataset realism (not all discounts need to be heavily used).
+- discount_code: unique 8-character alphanumeric code per row.
+- percentage/value range across all discounts: 5% - 20% (store as either
+  a dedicated numeric column if the generator adds one, or document it
+  alongside the title for the Python script to parse).
+
+--------------------------------------------------------------------------
+10. TABLE: basket_user (user_basket)  (~1000 rows)
+--------------------------------------------------------------------------
+Fields: user_id, product_id, quantity
+
+Rules:
+- user_id: must reference an existing users.id. NOT every user has a
+  basket entry. Users more likely to have an active basket:
+    - Repeat customers (35% cohort): 3x more likely to have 1-4 basket
+      items than non-repeat customers.
+    - Users who registered within the last 60 days: 1.5x more likely
+      (new users browsing before first purchase).
+  Roughly 500-600 distinct users end up with basket rows, each holding
+  1-3 items on average, totaling ~1000 rows.
+- product_id: must reference an existing products.id. Products more
+  likely to appear in baskets:
+    - bestseller tier products: 50% of basket picks
+    - mid_seller tier products: 40% of basket picks
+    - low_seller tier products: 10% of basket picks (browsing curiosity
+      on rare/expensive items even if rarely purchased)
+- quantity: 1 unit in 85% of basket rows, 2 units in 12%, 3+ in 3%
+  (max 4).
+
+--------------------------------------------------------------------------
+11. REALISTIC PATTERNS TO IMPLEMENT (minimum 10)
+--------------------------------------------------------------------------
+1. Seasonal sales increase: Dec, Jun, Feb, Nov are peak order months
+   (see order_date weighting in Section 6).
+2. Seasonal sales decrease: Mar, Jul, May are the slowest months.
+3. Bestseller concentration: 10% of products ("bestseller" tier) account
+   for ~40% of all order line items (Pareto-like skew).
+4. Loyal/repeat customers: 35% of users generate the large majority
+   (~85%+) of total orders (3-15 orders each vs 0-2 for the rest).
+5. Seasonal product-category affinity: Photography books peak in
+   spring/summer (coastal tourism season); Poetry books peak in
+   autumn/winter (Yalda/reading season).
+6. Discount-driven sales spikes: order volume and discount usage both
+   rise sharply in the final days of Feb/Apr/Jun/Aug/Oct/Dec around the
+   recurring 15% promotion.
+7. New vs. returning customer behavior: newly registered users (<60
+   days) are more likely to have items sitting in their basket without
+   completing checkout; repeat/older customers convert baskets to orders
+   faster and more often.
+8. Order size variance: small orders (1 item) and larger orders (4-6
+   items) coexist, with a realistic right-skewed distribution rather
+   than a flat/uniform one (Section 7).
+9. Price-tier driven quantity behavior: expensive/rare items (Paintings,
+   Rare Manuscripts) are almost always purchased at quantity = 1, while
+   inexpensive poetry books are more often bought in quantity 2-3
+   (as gifts).
+10. Payment-method / channel correlation: "cash" payments only occur on
+    "in_person" orders; "online_gateway" payments only occur on "online"
+    orders, reflecting realistic channel-payment coupling.
+11. Registration growth trend: user registrations skew toward the more
+    recent 12 months of the dataset timeline, reflecting business growth
+    over time, with mild seasonal bumps in autumn and December.
+12. Geographic weighting: Rasht (largest city among the three) supplies
+    the majority (55%) of customers and, by extension, orders.
+
+--------------------------------------------------------------------------
+12. DATA CONSISTENCY / REFERENTIAL INTEGRITY RULES (must always hold)
+--------------------------------------------------------------------------
+- Every orders.user_id must exist in users.id.
+- Every order_detail2.product_id must exist in products.id.
+- Every products.category must exist in categories.id.
+- Every order_detail2.order_id must exist in orders.id.
+- Every payments.order_id must exist in orders.id, and that order's
+  was_paid must be 1 (unpaid orders never get a payments row).
+- Every payments.discount_id must exist in discount.id, OR be NULL.
+- Every roles_user.user_id must exist in users.id.
+- Every roles_user.role_id must exist in roles.id.
+- Every basket_user.user_id must exist in users.id.
+- Every basket_user.product_id must exist in products.id.
+- All primary key ids (users, roles, categories, products, orders,
+  order_detail2, payments, discount) must be unique, positive integers,
+  generated sequentially or via a checked-unique random generator.
+- orders.order_date must never be earlier than that order's
+  users.register_date.
+- payments.payment_date must never be earlier than that payment's
+  orders.order_date.
+- payments.total_amount must always equal
+  payments.total_price - payments.discount_price (hard invariant,
+  validated after generation, not just sampled independently).
+- payments.discount_price must be 0 whenever payments.discount_id is
+  NULL.
+- All generated text fields (names, titles, details, cities, codes)
+  must be in English only, to avoid MySQL charset/encoding issues on
+  import.
+
+--------------------------------------------------------------------------
+13. TARGET ROW-COUNT SUMMARY (for the Python generator to aim for)
+--------------------------------------------------------------------------
+categories      : ~30
+products        : ~200
+users           : ~1500
+roles           : 3
+roles_user      : ~1515 (1500 customer rows + 10-12 staff + 2-3 admin)
+orders          : ~7000
+order_detail2   : ~20000
+payments        : ~6000
+discount        : ~30
+basket_user     : ~1000
+
+==========================================================================
+END OF SPECIFICATION
+==========================================================================
