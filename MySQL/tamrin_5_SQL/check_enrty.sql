@@ -10,3 +10,6 @@ SELECT * FROM products;
 SELECT * FROM roles;
 SELECT * FROM user_roles;
 SELECT * FROM users;
+
+
+-- 1:

@@ -273,22 +273,22 @@ def main():
     print(f"Generated {len(users)} users.")
 
     # -------------------------------------------------------------------------
-    # 4. ROLES & 5. ROLES_USER
+    # 4. ROLES & 5. user_roles
     # -------------------------------------------------------------------------
     roles = [(1, "admin"), (2, "staff"), (3, "customer")]
-    roles_user = []
+    user_roles = []
     for u in users:
-        roles_user.append((3, u["id"]))
+        user_roles.append((3, u["id"]))
 
     staff_users = random.sample(users, random.randint(8, 12))
     for u in staff_users:
-        roles_user.append((2, u["id"]))
+        user_roles.append((2, u["id"]))
 
     admin_users = random.sample(users, random.randint(2, 3))
     for u in admin_users:
-        roles_user.append((1, u["id"]))
+        user_roles.append((1, u["id"]))
 
-    print(f"Generated roles and {len(roles_user)} roles_user mappings.")
+    print(f"Generated roles and {len(user_roles)} user_roles mappings.")
 
     # -------------------------------------------------------------------------
     # 9. DISCOUNT (~30 rows)
@@ -606,7 +606,7 @@ def main():
         for p in products:
             detail_clean = p['detail'].replace("'", "''")
             title_clean = p['title'].replace("'", "''")
-            f.write(f"INSERT INTO products (id, title, detail, price, category) VALUES ({p['id']}, '{title_clean}', '{detail_clean}', {p['price']}, {p['category_id']});\n")
+            f.write(f"INSERT INTO products (id, title, detail, price, category_id) VALUES ({p['id']}, '{title_clean}', '{detail_clean}', {p['price']}, {p['category_id']});\n")
         f.write("\n")
 
         # 3. Users
@@ -622,9 +622,9 @@ def main():
         f.write("\n")
 
         # 5. Roles User
-        f.write("-- TABLE: roles_user\n")
-        for r_id, u_id in roles_user:
-            f.write(f"INSERT INTO roles_user (role_id, user_id) VALUES ({r_id}, {u_id});\n")
+        f.write("-- TABLE: user_roles\n")
+        for r_id, u_id in user_roles:
+            f.write(f"INSERT INTO user_roles (role_id, user_id) VALUES ({r_id}, {u_id});\n")
         f.write("\n")
 
         # 9. Discount
