@@ -1,0 +1,3 @@
+discount_status,transaction,before_discount,discount_amount,final_sales
+"without discout",2125,228897550000,0,228897550000
+"with discount",1576,170861310000,21134546000,149726764000
