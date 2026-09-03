@@ -1,0 +1,3 @@
+sales_channel,num_of_orders,num_of_customers,total_sales,avg_total_sales
+in_person,1709,709,167720310000,98139444.1194
+online,1992,765,210904004000,105875504.0161
