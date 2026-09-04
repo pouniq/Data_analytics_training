@@ -179,29 +179,139 @@ Error Code: 1366. Incorrect integer value: 'card' for column 'payment_type' at r
 
 ## جواب ها
 
+### سوال اول
+
+مبلغ فروش را نمايش دهيد. بگوييد كدام ماه بيشترين و كدام ماه كمترين فروش را داشته است. ميزان فروش كسب وكار را به تفكيك ماه محاسبه كنيد. براي هر ماه تعداد سفارشها، تعداد اقلام فروخته شده و مجموع مبلغ فروش را نمايش دهيد. بگوييد كدام ماه بيشترين و كدام ماه كمترين فروش را داشته است.
+
+- دیتای به دست آمده از سوال اول:
+	- کمترین فروش: ماه February سال 2025
+ 	- بیشترین فروش: ماه August سال 2025
+  
+[solution one data](https://github.com/pouniq/Data_analytics_training/blob/main/MySQL/tamrin_5_SQL/dataset_solutions/1.csv)
+
+
+### سوال دوم
+
+مشترياني را شناسايي كنيد كه در بازه زماني موردنظر بيش از يك سفارش داشته اند. براي هر مشتري تعداد سفارشها، مجموع مبلغ خريد و ميانگين مبلغ هر سفارش را محاسبه و مشتريان را بر اساس مجموع خريد از بيشترين به كمترين  مرتب كنيد .
+
+این افراد با این آیدی ها، ارزشمندترین مشتریان کسب و کار هستند و میتوانیم جشنواره ها و امتیازهای خاص برای این افراد در نظر بگیریم.
+
+'492'
+'1370'
+'796'
+'1061'
+'334'
+'1267'
+
+
+
+[solution two data](https://github.com/pouniq/Data_analytics_training/blob/main/MySQL/tamrin_5_SQL/dataset_solutions/2.csv)
+
+
+
+### سوال سوم
+
+براي هر محصول، تعداد دفعات فروش، مجموع تعداد فروختهشده و مجموع درآمد حاصل از فروش را محاسبه كنيد. سپس ١٠ محصول برتر از نظر درآمد را مشخص كنيد.
+جواب :
+[solution three](https://github.com/pouniq/Data_analytics_training/blob/main/MySQL/tamrin_5_SQL/dataset_solutions/3.csv)
+
+
+
+### سوال چهارم
+با استفاده از ارتباط بين جداول محصولات و دستهبندي ها، عملكرد هر دسته را بررسي كنيد. براي هر دسته تعداد محصولات، تعداد اقلام فروخته شده و مجموع درآمد را محاسبه كنيد و مشخص كنيد كدام دسته بيشترين سهم را در درآمد كسب و كار دارد.
+
+جواب:
+بیشترین سهم از فروش را
+'Classical Persian Poetry'
+اشعار کلاسیک فارس
+
+دارد.
+
+جواب کامل:
+
+[solution four](https://github.com/pouniq/Data_analytics_training/blob/main/MySQL/tamrin_5_SQL/dataset_solutions/4.csv)
+
+
+
+### جواب پنجم:
+عملكرد كانالهاي مختلف فروش را با يكديگر مقايسه كنيد. براي هر كانال تعداد سفارشها، تعداد مشتريان، مجموع فروش و ميانگين ارزش سفارش را محاسبه كنيد. در نهايت مشخص كنيد كدام كانال عملكرد بهتري دارد .
+
+
+جواب:
+فروش به با کانال آنلاین عملکرد بهتری نسبت به کانال فروش حضوری داشته.
+
+جواب کامل:
+
+[solution five](https://github.com/pouniq/Data_analytics_training/blob/main/MySQL/tamrin_5_SQL/dataset_solutions/5.csv)
+
+
+
+
+### جواب ششم:
+مشتريان را بر اساس شهر گروهبندي كنيد و براي هر شهر تعداد مشتريان، تعداد سفارشها، مجموع مبلغ خريد و ميانگين خريد هر مشتري را محاسبه كنيد. سپس مشخص كنيد كدام شهر بيشترين ارزش اقتصادي را براي كسبوكار ايجاد كرده است .
+
+
+جواب:
+مشتریان از شهر رشت بیشترین خرید را داشتند با میانگین فروش ۹۹ میلیون تومان
+
+
+[solution six](https://github.com/pouniq/Data_analytics_training/blob/main/MySQL/tamrin_5_SQL/dataset_solutions/6.csv)
+
+
+### جواب هفتم:
+
+سفارشها يا پرداختهاي داراي تخفيف را با سفارشها يا پرداختهاي بدون تخفيف مقايسه كنيد. براي هر گروه تعداد تراكنشها، مجموع مبلغ قبل از تخفيف، مجموع مبلغ تخفيف و مجموع مبلغ نهايي را محاسبه كنيد. سپس بررسي كنيد تخفيف چه تأثيري بر مبلغ فروش داشته است .
+
+
+برای بررسی اثر تخفیف روی قیمت اصلی میتوانید این دیتاست رو نگاه کنید.
+
+[solution seven](https://github.com/pouniq/Data_analytics_training/blob/main/MySQL/tamrin_5_SQL/dataset_solutions/7.csv)
+
+
+
+### جواب هشتم:
+مشترياني را پيدا كنيد كه در بازه زماني موردنظر هيچ سفارشي نداشته ند يا تعداد سفارش بسيار كمي داشته اند. تعداد اين مشتريان را محاسبه و در صورت امكان آنها را بر اساس شهر و وضعيت فعال/غيرفعال مقايسه كنيد. سپس يك پيشنهاد كسبوكاري براي افزايش مشاركت اين گروه ارائه دهيد .
+
+جواب:
+
+
+[solution eight](https://github.com/pouniq/Data_analytics_training/blob/main/MySQL/tamrin_5_SQL/dataset_solutions/8.csv)
+
+
+پیشنهاد:
+
+
+
+### جواب نهم:
+
+مشتريان وفادار را با ساير مشتريان مقايسه كنيد. براي هر گروه تعداد مشتريان، ميانگين تعداد سفارش به ازاي هر مشتري، ميانگين مبلغ خريد و ميانگين ارزش سفارش را محاسبه كنيد. سپس مشخص كنيد آيا مشتريان وفادار ارزش بيشتري براي كسبوكار ايجاد ميكنند يا خير .
+
+
+با اینکه تعداد مشتریان وفادار نصف مشتریان دیگر است ولی میانگین خرید آنها ۶ برابر دیگر مشتریان است. پس بله مشتریان وفادار ارزش بیشتری به کسب و کار می دهند.
+جواب:
+[solution nine](https://github.com/pouniq/Data_analytics_training/blob/main/MySQL/tamrin_5_SQL/dataset_solutions/9.csv)
+
+
+
 ## توضیحات کد
 
 
 
-[solution one](https://github.com/pouniq/Data_analytics_training/blob/main/MySQL/tamrin_5_SQL/dataset_solutions/1.csv)
 
 
 ![1](<./pics/1.jpg>) 
 
-[solution two](https://github.com/pouniq/Data_analytics_training/blob/main/MySQL/tamrin_5_SQL/dataset_solutions/2.csv)
 
 
 ![2](<./pics/2.jpg>) 
 
 
-[solution three](https://github.com/pouniq/Data_analytics_training/blob/main/MySQL/tamrin_5_SQL/dataset_solutions/3.csv)
 
 
 ![3](<./pics/3.jpg>) 
 
 
 
-[solution four](https://github.com/pouniq/Data_analytics_training/blob/main/MySQL/tamrin_5_SQL/dataset_solutions/4.csv)
 
 
 
@@ -210,36 +320,28 @@ Error Code: 1366. Incorrect integer value: 'card' for column 'payment_type' at r
 
 
 
-[solution five](https://github.com/pouniq/Data_analytics_training/blob/main/MySQL/tamrin_5_SQL/dataset_solutions/5.csv)
 
 
 
 ![5](<./pics/5.jpg>) 
 
 
-[solution six](https://github.com/pouniq/Data_analytics_training/blob/main/MySQL/tamrin_5_SQL/dataset_solutions/6.csv)
 
 
 
 ![6](<./pics/6.jpg>) 
 
 
-[solution seven](https://github.com/pouniq/Data_analytics_training/blob/main/MySQL/tamrin_5_SQL/dataset_solutions/7.csv)
 
 
 
 ![7](<./pics/7.jpg>) 
 
 
-[solution eight](https://github.com/pouniq/Data_analytics_training/blob/main/MySQL/tamrin_5_SQL/dataset_solutions/8.csv)
-
-
-
 
 ![8](<./pics/8.jpg>) 
 
 
-[solution nine](https://github.com/pouniq/Data_analytics_training/blob/main/MySQL/tamrin_5_SQL/dataset_solutions/9.csv)
 
 
 
