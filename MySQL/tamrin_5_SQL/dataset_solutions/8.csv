@@ -1,0 +1,752 @@
+id,first_name,last_name,city,order_count
+1,Pegah,Anzali,Nowshahr,0
+1000,Hossein,Nouri,Rasht,1
+1001,Mohammad,Pirouz,Nowshahr,0
+1006,Saman,Mousavi,Nowshahr,1
+1007,Shirin,Mohammadi,Nowshahr,0
+1008,Sina,Afshar,Nowshahr,0
+1009,Sohrab,Zand,Rasht,0
+1014,Hoda,Ghanbari,"Bandar Anzali",1
+1015,Kaveh,Ebrahimi,"Bandar Anzali",0
+1016,Farhad,Nouri,Nowshahr,0
+1017,Taras,Azizi,Rasht,0
+1019,Farhad,Sadeghi,Nowshahr,0
+1022,Alireza,Zarei,Rasht,1
+1024,Niloufar,Ghasemi,Rasht,1
+1025,Navid,Habibi,Rasht,0
+1026,Sina,Habibi,Rasht,0
+1028,Sara,Sardari,Nowshahr,0
+1029,Somayeh,Tavasoli,Rasht,1
+1030,Daryoush,Hosseini,Nowshahr,1
+1031,Sanaz,Vafaei,Rasht,1
+1032,Hamid,Khosravi,Rasht,0
+1034,Monir,Rezaei,Rasht,0
+1036,Bahar,Hashemi,Nowshahr,0
+1037,Roxana,Nasseri,Rasht,0
+1038,Narges,Moghadam,Rasht,1
+1043,Alireza,Ghorbani,"Bandar Anzali",0
+1044,Somayeh,Sadeghi,Rasht,0
+1048,Pegah,Mahdavi,Nowshahr,0
+1049,Ali,Vafaei,Rasht,1
+1052,Maryam,Danesh,Nowshahr,0
+1054,Sohrab,Taheri,Rasht,0
+1055,Hoda,Kashani,Rasht,1
+1056,Elnaz,Mirzai,Rasht,1
+1057,Sara,Ghorbani,Rasht,0
+106,Ahmad,Khani,Nowshahr,1
+1060,Atousa,Ahmadi,Rasht,0
+1062,Taras,Anzali,Rasht,0
+1063,Ladan,Kiani,Rasht,0
+1065,Somayeh,Nouri,Rasht,1
+1068,Somayeh,Habibi,"Bandar Anzali",0
+1069,Kobra,Tavasoli,Rasht,0
+1070,Ehsan,Ranjbar,Nowshahr,1
+1071,Sahar,Ramsari,Rasht,0
+1072,Reza,Rostami,"Bandar Anzali",1
+1078,Arash,Sardari,Nowshahr,1
+1082,Mohammad,Danesh,Rasht,1
+1084,Babak,Anzali,"Bandar Anzali",0
+1088,Arezoo,Najafi,Rasht,1
+1089,Mahmoud,Mirzai,Rasht,0
+109,Babak,Mohammadi,Nowshahr,1
+1092,Shirin,Najafi,Nowshahr,1
+1093,Zahra,Abbasi,Nowshahr,1
+1094,Amir,Danesh,Nowshahr,0
+1095,Monir,Sultani,Rasht,0
+1098,Khatereh,Eshghi,"Bandar Anzali",1
+11,Babak,Ghasemi,Rasht,1
+1100,Elnaz,Javadi,"Bandar Anzali",1
+1102,Sanaz,Ramsari,Rasht,0
+1108,Hossein,Sultani,Nowshahr,1
+111,Parisa,Jafari,"Bandar Anzali",1
+1110,Mehdi,Fathi,"Bandar Anzali",0
+1112,Ahmad,Mousavi,Rasht,0
+1113,Kobra,Ebrahimi,Nowshahr,0
+1115,Maryam,Gholami,Rasht,0
+1118,Bahar,Gilani,Rasht,0
+1119,Amir,Rahimi,"Bandar Anzali",0
+1120,Ghazal,Hashemi,Rasht,1
+1125,Roxana,Karimi,Rasht,1
+1127,Ahmad,Ranjbar,Rasht,1
+1129,Kaveh,Khosravi,Rasht,0
+1130,Fatemeh,Khani,Rasht,1
+1131,Narges,Mousavi,"Bandar Anzali",1
+1132,Pegah,Ranjbar,Rasht,0
+1134,Taras,Ebrahimi,Nowshahr,0
+1137,Khatereh,Hosseini,"Bandar Anzali",1
+1138,Hamidreza,Ghasemi,Nowshahr,0
+1139,Keyvan,Gholami,"Bandar Anzali",0
+114,Kobra,Pasha,"Bandar Anzali",1
+1142,Elnaz,Sardari,Nowshahr,0
+1143,Daryoush,Zand,Rasht,0
+1145,Somayeh,Gholami,Nowshahr,1
+1146,Zahra,Abedi,Nowshahr,1
+1148,Daryoush,Pirouz,Nowshahr,1
+1149,Behnam,Sadeghi,"Bandar Anzali",1
+1151,Atousa,Kazemi,"Bandar Anzali",0
+1157,Niloufar,Sadeghi,Rasht,1
+1159,Ramin,Rahimi,Rasht,0
+1160,Niloufar,Nasseri,Rasht,1
+1163,Daryoush,Farhadi,Rasht,1
+1164,Saman,Moradi,Rasht,0
+1167,Elnaz,Zand,Rasht,0
+1169,Sahar,Mirzai,Rasht,0
+117,Kamran,Karimi,Nowshahr,1
+1170,Bahar,Tehrani,"Bandar Anzali",1
+1172,Farhad,Tehrani,Nowshahr,0
+1177,Pouriya,Nasseri,Nowshahr,1
+1179,Pouriya,Hashemi,"Bandar Anzali",1
+1181,Arash,Mahdavi,Rasht,1
+1182,Narges,Rahimi,"Bandar Anzali",1
+1183,Pouriya,Habibi,Rasht,0
+1186,Sina,Ranjbar,Nowshahr,0
+1187,Arman,Habibi,Rasht,0
+1189,Keyvan,Vafaei,Rasht,0
+1190,Hossein,Abedi,Nowshahr,1
+1191,Sanaz,Anzali,Nowshahr,0
+1193,Atousa,Hashemi,Nowshahr,1
+1194,Mahmoud,Shahidi,Rasht,0
+1195,Kamran,Ghorbani,"Bandar Anzali",1
+1196,Khatereh,Rostami,Nowshahr,1
+1199,Sohrab,Bagheri,"Bandar Anzali",1
+12,Sina,Hashemi,Nowshahr,1
+1201,Behnam,Gilani,Rasht,0
+1206,Pegah,Hosseini,Nowshahr,0
+1208,Ali,Khani,Rasht,1
+1209,Zahra,Gilani,Rasht,0
+121,Sanaz,Khani,"Bandar Anzali",1
+1210,Zahra,Khosravi,"Bandar Anzali",1
+1211,Daryoush,Rezaei,"Bandar Anzali",0
+1213,Mina,Vafaei,Rasht,0
+1216,Ramin,Mahdavi,Rasht,1
+1218,Amir,Taheri,Rasht,0
+1219,Shirin,Pasha,Nowshahr,1
+122,Somayeh,Soleimani,"Bandar Anzali",1
+1220,Saman,Ramsari,Nowshahr,0
+1221,Aida,Sultani,Rasht,0
+1224,Sina,Ghanbari,Rasht,1
+1225,Keyvan,Kiani,Rasht,0
+1228,Saeed,Mohammadi,"Bandar Anzali",1
+1231,Yasaman,Sharifi,Nowshahr,1
+1232,Parisa,Nouri,Rasht,1
+1233,Daryoush,Zarei,Rasht,0
+1236,Mahmoud,Ghasemi,"Bandar Anzali",0
+1237,Hamidreza,Nasseri,Nowshahr,0
+1238,Kaveh,Danesh,"Bandar Anzali",0
+124,Niloufar,Ebrahimi,Nowshahr,1
+1241,Yasaman,Mohammadi,Rasht,1
+1246,Ladan,Shirazi,"Bandar Anzali",1
+1247,Alireza,Ebrahimi,Rasht,1
+1248,Taras,Bagheri,Rasht,0
+125,Mahmoud,Tehrani,Rasht,0
+1250,Kamran,Salehi,"Bandar Anzali",1
+1252,Mehdi,Pasha,Rasht,0
+1253,Elnaz,Ranjbar,Rasht,1
+1257,Ahmad,Karimi,Rasht,0
+1258,Kaveh,Salehi,Nowshahr,0
+1260,Somayeh,Tehrani,Rasht,1
+1262,Behnam,Salehi,Nowshahr,0
+1263,Arman,Eshghi,Rasht,1
+1265,Hoda,Kazemi,Rasht,0
+1270,Pouriya,Eshghi,"Bandar Anzali",1
+1271,Taras,Sharifi,Nowshahr,1
+1272,Saman,Ramsari,Rasht,1
+1273,Kaveh,Azizi,Nowshahr,1
+1274,Sepideh,Shirazi,"Bandar Anzali",0
+1275,Sara,Zarei,"Bandar Anzali",1
+1277,Sina,Khani,"Bandar Anzali",1
+1278,Ehsan,Abedi,Rasht,0
+1279,Atousa,Ghanbari,Rasht,0
+128,Ghazal,Hashemi,"Bandar Anzali",0
+1281,Kamran,Rostami,Nowshahr,1
+1286,Sanaz,Ranjbar,Rasht,0
+1287,Zahra,Kazemi,Rasht,0
+1290,Mohammad,Jafari,Nowshahr,1
+1292,Ghazal,Salehi,Nowshahr,1
+1294,Taras,Kiani,Rasht,0
+1295,Aida,Kazemi,Nowshahr,1
+1296,Ladan,Kashani,"Bandar Anzali",0
+1297,Hamid,Kazemi,Rasht,0
+1300,Hamidreza,Karimi,Nowshahr,1
+1301,Sina,Ranjbar,Rasht,0
+1302,Hamidreza,Hosseini,Rasht,1
+1304,Mina,Habibi,"Bandar Anzali",1
+1305,Monir,Hashemi,"Bandar Anzali",1
+1308,Roxana,Zarei,Rasht,0
+1309,Ghazal,Shirazi,Nowshahr,0
+1310,Sina,Najafi,"Bandar Anzali",1
+1311,Ghazal,Sadeghi,"Bandar Anzali",1
+1312,Sepideh,Tavasoli,Rasht,1
+1315,Monir,Ghanbari,Rasht,0
+1319,Sahar,Khosravi,Rasht,1
+1321,Reza,Azizi,"Bandar Anzali",1
+1322,Sohrab,Karimi,"Bandar Anzali",1
+1323,Fatemeh,Ghasemi,Nowshahr,0
+1324,Behnam,Bagheri,"Bandar Anzali",0
+1326,Farhad,Ghanbari,Rasht,0
+1328,Bahar,Sadeghi,"Bandar Anzali",1
+1330,Monir,Ahmadi,Rasht,0
+1331,Arman,Sharifi,Rasht,1
+1334,Pouriya,Moradi,Rasht,1
+1336,Sina,Vafaei,Rasht,0
+1337,Kamran,Hosseini,Rasht,0
+1338,Ramin,Zand,Rasht,0
+134,Hamidreza,Hosseini,Rasht,1
+1340,Hamidreza,Moghadam,Rasht,1
+1343,Mohammad,Khosravi,Nowshahr,0
+1344,Mohammad,Shirazi,Rasht,0
+1347,Mahsa,Tehrani,Rasht,1
+1348,Narges,Ghanbari,Nowshahr,0
+1350,Ali,Shahidi,"Bandar Anzali",1
+1352,Elnaz,Hashemi,Rasht,0
+1353,Alireza,Danesh,"Bandar Anzali",0
+1354,Alireza,Shahidi,Rasht,0
+1356,Yasaman,Ranjbar,Rasht,1
+1357,Shirin,Mirzai,"Bandar Anzali",1
+1358,Ghazal,Zarei,Nowshahr,1
+1359,Mahmoud,Anzali,Nowshahr,0
+1360,Bahar,Rahimi,"Bandar Anzali",1
+1363,Khatereh,Rostami,Rasht,1
+1366,Yasaman,Azizi,Rasht,0
+137,Amir,Zand,Nowshahr,0
+1373,Babak,Rashti,Rasht,1
+1375,Ahmad,Soleimani,Rasht,0
+1376,Sina,Javadi,Rasht,1
+1377,Sina,Khosravi,Rasht,0
+1378,Hossein,Shirazi,Rasht,1
+1379,Mina,Gholami,Rasht,0
+138,Mahsa,Rashti,Nowshahr,1
+1382,Babak,Rezaei,Rasht,1
+1385,Bahar,Shahidi,Rasht,0
+1386,Reza,Mahdavi,Rasht,1
+1387,Saeed,Ghorbani,"Bandar Anzali",0
+1388,Taras,Sultani,"Bandar Anzali",0
+139,Ahmad,Poursaeed,Rasht,0
+1390,Babak,Azizi,Rasht,1
+1392,Sina,Bagheri,Nowshahr,1
+1393,Mina,Khosravi,Rasht,1
+1394,Ehsan,Ghorbani,Rasht,1
+1395,Niloufar,Taheri,Rasht,0
+1396,Fatemeh,Sharifi,Nowshahr,0
+1397,Fatemeh,Azizi,Nowshahr,0
+1399,Sahar,Fathi,Nowshahr,1
+14,Navid,Mirzai,Rasht,0
+140,Parisa,Ahmadi,"Bandar Anzali",1
+1406,Kobra,Taheri,Nowshahr,0
+1407,Pegah,Farhadi,Nowshahr,0
+1409,Amir,Gilani,Nowshahr,1
+141,Hamid,Rahimi,Nowshahr,0
+1410,Navid,Pasha,Nowshahr,0
+1412,Mahsa,Shirazi,Rasht,0
+1415,Mehdi,Rezaei,Nowshahr,0
+1417,Daryoush,Zand,"Bandar Anzali",1
+1419,Roxana,Gholami,"Bandar Anzali",1
+1420,Pouriya,Fathi,Rasht,1
+1421,Niloufar,Ramsari,Rasht,0
+1422,Sahar,Abedi,"Bandar Anzali",0
+1424,Sahar,Khosravi,Rasht,0
+1425,Mehdi,Moradi,"Bandar Anzali",0
+1426,Kaveh,Sharifi,Rasht,1
+1427,Shirin,Mohammadi,Rasht,1
+1429,Kamran,Ghanbari,Rasht,1
+143,Somayeh,Habibi,Rasht,0
+1430,Yasaman,Abbasi,Rasht,0
+1431,Pegah,Pirouz,Nowshahr,0
+1434,Elnaz,Hashemi,"Bandar Anzali",1
+1435,Babak,Salehi,Rasht,0
+1437,Somayeh,Zand,Rasht,0
+1438,Nima,Ghanbari,Rasht,0
+1439,Niloufar,Nasseri,Nowshahr,0
+1440,Taras,Rostami,Nowshahr,1
+1442,Maryam,Shirazi,Rasht,0
+1443,Narges,Tehrani,Rasht,0
+1444,Amir,Rezaei,Nowshahr,1
+1445,Behnam,Ghasemi,Nowshahr,0
+1446,Zahra,Zarei,Nowshahr,0
+1447,Shorah,Hashemi,Rasht,0
+1448,Yasaman,Javadi,Nowshahr,1
+1449,Mina,Ghasemi,"Bandar Anzali",0
+1450,Pouriya,Kashani,Rasht,1
+1452,Sohrab,Bagheri,Nowshahr,1
+1456,Somayeh,Hashemi,Nowshahr,0
+1457,Ramin,Eshghi,Rasht,0
+146,Niloufar,Ghorbani,Nowshahr,0
+1460,Ehsan,Mahdavi,Rasht,1
+1464,Mina,Poursaeed,Nowshahr,1
+1465,Hossein,Najafi,Nowshahr,1
+1466,Kamran,Mahdavi,"Bandar Anzali",0
+1467,Taras,Ghanbari,"Bandar Anzali",0
+147,Ali,Soleimani,"Bandar Anzali",1
+1471,Farhad,Soleimani,Rasht,0
+1473,Arash,Karimi,Rasht,1
+1475,Ahmad,Jafari,Nowshahr,1
+1476,Mahsa,Sharifi,Rasht,1
+1477,Mahmoud,Sardari,Rasht,0
+1478,Arezoo,Rostami,Rasht,0
+1479,Keyvan,Abbasi,"Bandar Anzali",1
+1480,Sara,Shirazi,Rasht,0
+1485,Ramin,Rashti,"Bandar Anzali",0
+1488,Daryoush,Hashemi,Rasht,0
+149,Nima,Kiani,Rasht,1
+1492,Arezoo,Mohammadi,"Bandar Anzali",1
+1494,Fatemeh,Shahidi,Rasht,1
+1496,Yasaman,Najafi,"Bandar Anzali",1
+1498,Saman,Shahidi,Rasht,0
+150,Daryoush,Moradi,"Bandar Anzali",1
+152,Sohrab,Taheri,Rasht,0
+156,Khatereh,Tehrani,Nowshahr,1
+157,Sara,Mohammadi,Rasht,1
+16,Ehsan,Kiani,Rasht,0
+160,Hossein,Hashemi,Nowshahr,0
+161,Ali,Mirzai,Nowshahr,1
+162,Saman,Rashti,Nowshahr,1
+164,Ehsan,Ahmadi,Nowshahr,1
+165,Khatereh,Karimi,Rasht,0
+168,Aida,Khosravi,"Bandar Anzali",1
+171,Sanaz,Najafi,Nowshahr,1
+172,Arash,Ghorbani,Rasht,1
+173,Elnaz,Danesh,Nowshahr,0
+174,Alireza,Rezaei,Rasht,1
+175,Taras,Rezaei,Rasht,0
+177,Narges,Bagheri,Rasht,0
+180,Pariyan,Bagheri,Rasht,0
+181,Farhad,Sardari,Rasht,1
+182,Narges,Mohammadi,Nowshahr,0
+183,Niloufar,Moghadam,Rasht,0
+186,Sanaz,Abedi,Rasht,1
+190,Behnam,Shirazi,Nowshahr,0
+195,Khatereh,Rahimi,Rasht,0
+199,Ramin,Sharifi,Rasht,0
+200,Taras,Kashani,Nowshahr,1
+201,Arezoo,Ebrahimi,Rasht,1
+203,Pariyan,Mirzai,Rasht,0
+205,Sina,Zand,Nowshahr,0
+207,Narges,Rostami,Rasht,0
+208,Pegah,Gholami,Nowshahr,0
+209,Alireza,Nasseri,Nowshahr,0
+211,Reza,Sultani,"Bandar Anzali",1
+212,Fatemeh,Rashti,Rasht,1
+214,Mohammad,Abbasi,Rasht,1
+215,Arash,Khani,Rasht,0
+217,Ramin,Kazemi,Rasht,0
+218,Khatereh,Habibi,Nowshahr,0
+22,Saman,Nouri,Rasht,1
+222,Kobra,Kashani,Rasht,0
+223,Ramin,Bagheri,Rasht,1
+227,Monir,Ghanbari,"Bandar Anzali",0
+230,Shirin,Abbasi,Rasht,1
+234,Pariyan,Khosravi,Rasht,1
+235,Aida,Soleimani,Rasht,1
+237,Farhad,Danesh,Rasht,0
+238,Keyvan,Sultani,Rasht,1
+239,Saman,Jafari,"Bandar Anzali",1
+242,Hossein,Moghadam,Rasht,1
+243,Alireza,Poursaeed,Nowshahr,0
+246,Mohammad,Rashti,Rasht,1
+247,Arezoo,Tavasoli,"Bandar Anzali",1
+250,Sina,Gilani,"Bandar Anzali",1
+253,Pouriya,Anzali,Nowshahr,1
+255,Sohrab,Najafi,Rasht,0
+256,Shirin,Poursaeed,Nowshahr,0
+259,Kamran,Ghanbari,Rasht,1
+260,Hossein,Taheri,Rasht,0
+262,Zahra,Pirouz,Rasht,0
+263,Shorah,Habibi,Rasht,0
+267,Maryam,Karimi,Rasht,1
+27,Aida,Kashani,"Bandar Anzali",0
+270,Sahar,Moghadam,Nowshahr,0
+273,Behnam,Ranjbar,Nowshahr,0
+274,Arman,Azizi,Rasht,0
+28,Kamran,Kazemi,Rasht,0
+281,Mahsa,Hosseini,"Bandar Anzali",1
+282,Amir,Zand,Rasht,1
+283,Taras,Ghorbani,Rasht,1
+284,Mehdi,Shirazi,Rasht,0
+285,Babak,Pasha,Nowshahr,1
+286,Keyvan,Abedi,Rasht,1
+287,Alireza,Sardari,Rasht,0
+288,Elnaz,Vafaei,Nowshahr,0
+289,Monir,Najafi,"Bandar Anzali",1
+29,Hamidreza,Poursaeed,Rasht,1
+290,Mohammad,Kiani,"Bandar Anzali",1
+291,Ramin,Ghasemi,Nowshahr,1
+295,Roxana,Ebrahimi,Rasht,0
+296,Pouriya,Nouri,Rasht,0
+297,Ahmad,Gilani,Rasht,1
+298,Saman,Ebrahimi,"Bandar Anzali",0
+302,Alireza,Pirouz,Rasht,1
+305,Mahsa,Ghorbani,Rasht,0
+306,Shirin,Danesh,Rasht,0
+307,Sohrab,Poursaeed,Rasht,0
+308,Daryoush,Ghasemi,"Bandar Anzali",1
+309,Kamran,Azizi,Nowshahr,1
+31,Khatereh,Kazemi,Rasht,1
+310,Roxana,Danesh,Rasht,0
+315,Pariyan,Sultani,"Bandar Anzali",0
+316,Kaveh,Sardari,"Bandar Anzali",1
+317,Shorah,Pasha,Rasht,1
+32,Navid,Hashemi,Rasht,0
+320,Aida,Ghorbani,Rasht,0
+321,Niloufar,Javadi,Nowshahr,0
+322,Hamid,Nouri,Rasht,0
+327,Daryoush,Salehi,Nowshahr,1
+328,Mehdi,Zarei,Nowshahr,1
+330,Mahmoud,Kazemi,Rasht,0
+333,Arman,Farhadi,Nowshahr,0
+335,Taras,Gilani,Nowshahr,1
+337,Hamidreza,Najafi,Rasht,0
+338,Aida,Soleimani,Rasht,0
+34,Maryam,Pasha,Rasht,1
+341,Kamran,Eshghi,"Bandar Anzali",1
+343,Pegah,Pasha,Rasht,1
+344,Arezoo,Rahimi,Rasht,1
+345,Roxana,Ranjbar,Rasht,1
+346,Ehsan,Azizi,Rasht,0
+347,Saeed,Ebrahimi,Rasht,1
+348,Elnaz,Javadi,"Bandar Anzali",0
+35,Mina,Sardari,Nowshahr,0
+352,Niloufar,Ranjbar,Nowshahr,1
+353,Bahar,Gilani,"Bandar Anzali",1
+354,Babak,Tehrani,"Bandar Anzali",0
+355,Niloufar,Shahidi,"Bandar Anzali",1
+356,Pouriya,Shirazi,Rasht,0
+359,Ali,Sadeghi,Rasht,1
+36,Hamid,Pirouz,Rasht,1
+362,Ladan,Sultani,Rasht,1
+364,Arezoo,Ramsari,Rasht,0
+367,Reza,Kashani,Rasht,1
+370,Babak,Gilani,Rasht,0
+371,Ahmad,Azizi,"Bandar Anzali",0
+375,Pariyan,Shirazi,Rasht,1
+378,Ehsan,Poursaeed,"Bandar Anzali",1
+382,Hamidreza,Rashti,Rasht,1
+383,Ahmad,Kashani,Rasht,1
+389,Babak,Soleimani,"Bandar Anzali",1
+390,Mina,Azizi,Rasht,0
+391,Arman,Najafi,Nowshahr,0
+392,Pariyan,Afshar,Nowshahr,0
+393,Sahar,Afshar,Rasht,0
+395,Narges,Rezaei,"Bandar Anzali",0
+4,Yasaman,Najafi,Rasht,1
+40,Babak,Vafaei,Rasht,0
+401,Zahra,Anzali,"Bandar Anzali",0
+402,Maryam,Abedi,Nowshahr,0
+405,Farhad,Moradi,Nowshahr,0
+41,Navid,Rostami,Rasht,1
+412,Ali,Gholami,Rasht,0
+414,Ali,Bagheri,Rasht,1
+416,Sahar,Tehrani,"Bandar Anzali",0
+417,Mahsa,Abedi,Rasht,0
+419,Taras,Farhadi,"Bandar Anzali",1
+42,Babak,Tavasoli,Nowshahr,0
+420,Mahsa,Gilani,Nowshahr,1
+421,Bahar,Kiani,"Bandar Anzali",1
+424,Ladan,Salehi,"Bandar Anzali",0
+427,Arash,Taheri,Nowshahr,1
+428,Kamran,Javadi,Rasht,0
+43,Mahmoud,Mousavi,Rasht,0
+432,Zahra,Ramsari,"Bandar Anzali",1
+433,Pariyan,Salehi,Rasht,0
+438,Mina,Taheri,Nowshahr,0
+439,Pariyan,Pasha,Nowshahr,0
+440,Hamid,Abbasi,Nowshahr,1
+441,Saeed,Habibi,"Bandar Anzali",1
+442,Pouriya,Farhadi,Rasht,1
+444,Mehdi,Taheri,Nowshahr,0
+446,Pouriya,Zand,"Bandar Anzali",1
+448,Mohammad,Ranjbar,Rasht,1
+449,Sahar,Khosravi,Nowshahr,1
+45,Hoda,Mirzai,Nowshahr,0
+452,Kaveh,Eshghi,Nowshahr,1
+453,Hamidreza,Mohammadi,"Bandar Anzali",1
+458,Pariyan,Ghorbani,Rasht,0
+46,Farhad,Danesh,Rasht,0
+462,Sanaz,Taheri,Rasht,0
+463,Pegah,Shahidi,Rasht,1
+464,Hoda,Ramsari,Rasht,0
+466,Reza,Zarei,Rasht,0
+468,Hoda,Rahimi,"Bandar Anzali",0
+473,Babak,Pirouz,"Bandar Anzali",1
+475,Pouriya,Tehrani,"Bandar Anzali",1
+476,Amir,Zand,"Bandar Anzali",0
+480,Nima,Sharifi,Rasht,1
+481,Alireza,Najafi,"Bandar Anzali",0
+482,Mahsa,Ramsari,Nowshahr,0
+483,Amir,Khosravi,Rasht,0
+484,Atousa,Nouri,Nowshahr,0
+485,Taras,Poursaeed,Nowshahr,0
+487,Babak,Rashti,Rasht,0
+488,Keyvan,Abbasi,Rasht,0
+489,Saeed,Nasseri,Rasht,0
+49,Sanaz,Pirouz,Nowshahr,0
+494,Aida,Mirzai,Nowshahr,1
+495,Elnaz,Hashemi,Rasht,0
+497,Mahsa,Sadeghi,Rasht,1
+498,Sanaz,Khosravi,Nowshahr,0
+500,Saeed,Habibi,Rasht,1
+501,Arman,Tehrani,Rasht,1
+502,Hamid,Ahmadi,Rasht,0
+503,Shorah,Gilani,Rasht,0
+504,Daryoush,Tehrani,Nowshahr,0
+505,Daryoush,Karimi,Nowshahr,0
+509,Reza,Tehrani,Rasht,1
+51,Roxana,Mohammadi,Rasht,0
+510,Arezoo,Zarei,Nowshahr,1
+512,Aida,Farhadi,Rasht,1
+513,Arezoo,Taheri,Rasht,0
+515,Saman,Bagheri,"Bandar Anzali",0
+516,Babak,Kashani,Rasht,0
+519,Mahmoud,Sadeghi,"Bandar Anzali",1
+521,Fatemeh,Afshar,Rasht,1
+526,Mehdi,Vafaei,Nowshahr,0
+53,Nima,Kazemi,Rasht,0
+534,Sohrab,Karimi,Nowshahr,1
+537,Nima,Mousavi,Rasht,1
+539,Bahar,Eshghi,Rasht,1
+54,Niloufar,Azizi,Nowshahr,1
+540,Hoda,Anzali,"Bandar Anzali",0
+544,Daryoush,Eshghi,Rasht,0
+545,Behnam,Rashti,Nowshahr,1
+546,Behnam,Moradi,Rasht,0
+548,Behnam,Rashti,Nowshahr,0
+549,Ghazal,Eshghi,Rasht,0
+550,Mohammad,Farhadi,Rasht,0
+553,Narges,Karimi,"Bandar Anzali",0
+555,Aida,Mohammadi,"Bandar Anzali",0
+556,Sara,Ahmadi,"Bandar Anzali",1
+557,Kobra,Zand,Rasht,0
+558,Arash,Mousavi,Rasht,1
+56,Maryam,Tavasoli,Rasht,0
+563,Somayeh,Pasha,Rasht,1
+568,Hoda,Zand,Rasht,1
+569,Ahmad,Moradi,Rasht,0
+570,Niloufar,Javadi,Rasht,0
+575,Sina,Sharifi,Rasht,1
+577,Somayeh,Khosravi,Nowshahr,1
+58,Saeed,Danesh,Nowshahr,1
+581,Narges,Kiani,Rasht,0
+583,Navid,Ghorbani,Nowshahr,1
+585,Farhad,Shahidi,Rasht,1
+586,Ghazal,Farhadi,Rasht,0
+588,Khatereh,Sadeghi,Rasht,0
+590,Navid,Pirouz,Rasht,1
+592,Hossein,Sharifi,Rasht,0
+593,Zahra,Ahmadi,"Bandar Anzali",1
+597,Maryam,Habibi,Nowshahr,1
+599,Hossein,Nouri,Rasht,1
+6,Niloufar,Ghasemi,Nowshahr,1
+60,Saeed,Nasseri,Nowshahr,0
+600,Ghazal,Salehi,Nowshahr,1
+605,Hossein,Rezaei,Rasht,1
+606,Ehsan,Bagheri,Rasht,0
+61,Babak,Danesh,Rasht,0
+614,Taras,Ranjbar,Nowshahr,1
+615,Mina,Salehi,Rasht,0
+619,Alireza,Ramsari,Nowshahr,1
+62,Sina,Salehi,Rasht,0
+620,Farhad,Mahdavi,Nowshahr,0
+621,Elnaz,Bagheri,Nowshahr,1
+626,Mahmoud,Khani,Rasht,1
+627,Reza,Gholami,Nowshahr,1
+63,Keyvan,Tavasoli,Nowshahr,1
+630,Saman,Nasseri,Rasht,0
+633,Mohammad,Hashemi,"Bandar Anzali",1
+635,Sina,Farhadi,Nowshahr,1
+636,Kamran,Gilani,Rasht,0
+637,Sina,Najafi,Rasht,0
+639,Yasaman,Soleimani,Nowshahr,1
+64,Nima,Azizi,Rasht,0
+643,Pegah,Moghadam,Nowshahr,0
+644,Parisa,Ramsari,Rasht,1
+645,Pouriya,Sadeghi,Rasht,0
+647,Ghazal,Zand,Nowshahr,1
+648,Sanaz,Danesh,Rasht,1
+650,Bahar,Bagheri,"Bandar Anzali",0
+653,Amir,Farhadi,Rasht,0
+655,Pouriya,Fathi,Nowshahr,1
+657,Mohammad,Bagheri,Rasht,0
+66,Elnaz,Soleimani,"Bandar Anzali",0
+661,Reza,Abedi,Nowshahr,0
+662,Roxana,Ebrahimi,Rasht,1
+664,Monir,Ghorbani,"Bandar Anzali",1
+668,Hoda,Kazemi,Rasht,0
+669,Kaveh,Ghorbani,Nowshahr,0
+67,Parisa,Mohammadi,"Bandar Anzali",0
+670,Elnaz,Taheri,Rasht,0
+671,Arash,Hashemi,Nowshahr,1
+672,Mahsa,Taheri,Nowshahr,1
+674,Somayeh,Shahidi,Nowshahr,0
+676,Saeed,Ghanbari,Nowshahr,1
+678,Hamidreza,Rostami,"Bandar Anzali",1
+679,Alireza,Nouri,"Bandar Anzali",0
+68,Sara,Salehi,"Bandar Anzali",1
+680,Sepideh,Habibi,Nowshahr,1
+683,Maryam,Moradi,Rasht,1
+684,Mina,Bagheri,Rasht,1
+687,Zahra,Mirzai,"Bandar Anzali",1
+69,Ramin,Khani,Rasht,1
+691,Mina,Taheri,Rasht,0
+694,Keyvan,Tehrani,Nowshahr,1
+696,Mahmoud,Najafi,Rasht,1
+697,Sepideh,Pasha,Nowshahr,0
+70,Daryoush,Hosseini,"Bandar Anzali",1
+700,Kaveh,Danesh,Rasht,1
+705,Sahar,Ebrahimi,Nowshahr,1
+706,Kaveh,Tehrani,Nowshahr,0
+710,Ladan,Ebrahimi,"Bandar Anzali",0
+712,Maryam,Ranjbar,"Bandar Anzali",0
+716,Maryam,Rostami,Nowshahr,1
+717,Shirin,Eshghi,Rasht,0
+718,Taras,Azizi,Nowshahr,0
+719,Alireza,Khosravi,Rasht,1
+72,Yasaman,Azizi,Nowshahr,0
+720,Ladan,Zarei,Nowshahr,0
+721,Ghazal,Mohammadi,"Bandar Anzali",0
+723,Khatereh,Bagheri,Rasht,1
+724,Arman,Moghadam,"Bandar Anzali",1
+726,Hamidreza,Jafari,Rasht,0
+728,Nima,Nasseri,Rasht,0
+73,Sanaz,Kiani,Rasht,1
+734,Taras,Rahimi,Rasht,0
+735,Ehsan,Zand,Rasht,0
+736,Reza,Tehrani,Rasht,0
+737,Sanaz,Poursaeed,Rasht,0
+74,Mohammad,Rezaei,Rasht,0
+740,Mahmoud,Kashani,Nowshahr,1
+742,Khatereh,Ebrahimi,Rasht,0
+744,Sahar,Ebrahimi,"Bandar Anzali",1
+745,Amir,Mirzai,Rasht,1
+747,Alireza,Pasha,Rasht,0
+748,Nima,Poursaeed,Rasht,0
+749,Hossein,Soleimani,Rasht,0
+752,Ladan,Shirazi,Rasht,1
+753,Pouriya,Sardari,"Bandar Anzali",1
+754,Saman,Gholami,Rasht,1
+756,Parisa,Ahmadi,Rasht,1
+759,Amir,Moghadam,Rasht,1
+761,Sahar,Ghorbani,Nowshahr,1
+762,Zahra,Rostami,Rasht,1
+767,Ali,Soleimani,Rasht,1
+768,Zahra,Soleimani,Rasht,0
+769,Behnam,Taheri,"Bandar Anzali",1
+77,Taras,Salehi,"Bandar Anzali",1
+772,Somayeh,Sultani,Rasht,1
+773,Yasaman,Farhadi,Rasht,0
+774,Ahmad,Zand,Nowshahr,0
+776,Mahsa,Anzali,"Bandar Anzali",0
+778,Hamid,Hashemi,Rasht,0
+779,Kobra,Zand,Rasht,0
+781,Saman,Sadeghi,Rasht,0
+782,Shorah,Shirazi,"Bandar Anzali",1
+783,Pariyan,Mirzai,Rasht,0
+784,Atousa,Rashti,Rasht,0
+785,Pouriya,Tehrani,Nowshahr,1
+786,Zahra,Salehi,Rasht,1
+787,Sara,Nouri,"Bandar Anzali",1
+790,Babak,Ghanbari,"Bandar Anzali",0
+794,Daryoush,Zarei,"Bandar Anzali",0
+798,Nima,Ramsari,Rasht,1
+799,Kaveh,Pasha,Rasht,1
+8,Sina,Salehi,Rasht,1
+80,Pouriya,Farhadi,Rasht,0
+801,Shorah,Mousavi,Nowshahr,1
+802,Hamid,Rezaei,Nowshahr,0
+803,Alireza,Rahimi,Rasht,1
+804,Hossein,Kazemi,Nowshahr,0
+805,Sara,Ghorbani,Rasht,0
+806,Aida,Ramsari,"Bandar Anzali",1
+810,Roxana,Vafaei,Nowshahr,1
+811,Aida,Mousavi,Nowshahr,0
+814,Sina,Vafaei,Rasht,0
+815,Behnam,Ebrahimi,Rasht,0
+816,Mahmoud,Abbasi,Rasht,1
+817,Yasaman,Habibi,Rasht,1
+818,Monir,Moradi,Rasht,0
+821,Shorah,Gholami,Rasht,0
+825,Sina,Afshar,"Bandar Anzali",1
+827,Reza,Kiani,Rasht,1
+83,Saman,Zand,Rasht,0
+831,Mina,Mousavi,"Bandar Anzali",0
+834,Monir,Shirazi,Rasht,1
+835,Somayeh,Hosseini,"Bandar Anzali",0
+836,Mina,Abedi,Rasht,1
+838,Keyvan,Ramsari,Rasht,1
+839,Mehdi,Pirouz,"Bandar Anzali",0
+84,Alireza,Danesh,Rasht,0
+840,Saeed,Anzali,"Bandar Anzali",0
+842,Mahmoud,Moradi,Nowshahr,0
+843,Mahsa,Khani,"Bandar Anzali",0
+844,Taras,Khani,Rasht,1
+845,Yasaman,Taheri,"Bandar Anzali",1
+849,Sara,Fathi,"Bandar Anzali",1
+850,Sahar,Eshghi,"Bandar Anzali",0
+852,Aida,Ahmadi,Nowshahr,0
+853,Roxana,Zand,Rasht,1
+854,Navid,Hashemi,"Bandar Anzali",1
+855,Pouriya,Vafaei,Nowshahr,0
+857,Babak,Nasseri,Nowshahr,1
+858,Kobra,Abbasi,Rasht,1
+859,Aida,Tavasoli,Nowshahr,0
+86,Saeed,Afshar,Nowshahr,1
+861,Yasaman,Moghadam,Rasht,0
+862,Ramin,Tavasoli,Rasht,0
+869,Yasaman,Kazemi,Nowshahr,1
+872,Reza,Abedi,Rasht,0
+877,Sanaz,Sharifi,Rasht,0
+883,Arash,Mousavi,Rasht,1
+884,Sara,Ghanbari,Rasht,1
+886,Ahmad,Kashani,Rasht,0
+887,Taras,Nasseri,Nowshahr,1
+89,Arash,Poursaeed,Rasht,1
+891,Ahmad,Eshghi,"Bandar Anzali",1
+893,Mahmoud,Tavasoli,Rasht,0
+895,Sina,Abedi,Rasht,0
+897,Roxana,Mohammadi,Rasht,0
+898,Hamidreza,Kazemi,"Bandar Anzali",1
+900,Somayeh,Tavasoli,Rasht,1
+901,Saeed,Azizi,"Bandar Anzali",0
+902,Sohrab,Kashani,Rasht,0
+905,Somayeh,Sharifi,Rasht,1
+906,Mina,Salehi,Nowshahr,1
+907,Saeed,Sadeghi,Rasht,1
+913,Navid,Khani,Nowshahr,1
+915,Sahar,Abedi,Nowshahr,1
+917,Taras,Hosseini,"Bandar Anzali",0
+918,Kamran,Anzali,Nowshahr,1
+919,Saeed,Zarei,Rasht,1
+920,Taras,Salehi,Rasht,0
+923,Zahra,Ebrahimi,Rasht,1
+924,Ladan,Bagheri,Rasht,0
+925,Arezoo,Mirzai,"Bandar Anzali",0
+926,Khatereh,Vafaei,Rasht,1
+93,Sara,Vafaei,Rasht,1
+936,Reza,Rahimi,"Bandar Anzali",1
+937,Mahsa,Afshar,Nowshahr,0
+943,Mehdi,Zand,Rasht,0
+944,Fatemeh,Farhadi,Nowshahr,0
+945,Mahsa,Shahidi,Nowshahr,1
+947,Aida,Khosravi,Nowshahr,1
+948,Saman,Tavasoli,Rasht,0
+95,Hoda,Mousavi,Nowshahr,1
+954,Babak,Rashti,"Bandar Anzali",0
+956,Sepideh,Javadi,Rasht,0
+958,Hamid,Karimi,Nowshahr,0
+959,Saeed,Najafi,Nowshahr,0
+960,Niloufar,Habibi,Rasht,1
+961,Babak,Mousavi,Nowshahr,1
+962,Atousa,Nasseri,Rasht,1
+964,Zahra,Kashani,Rasht,0
+969,Pariyan,Hashemi,Nowshahr,0
+970,Khatereh,Ranjbar,Rasht,0
+974,Ali,Bagheri,"Bandar Anzali",1
+977,Bahar,Sharifi,Rasht,0
+985,Amir,Taheri,"Bandar Anzali",1
+986,Saman,Fathi,Rasht,1
+987,Pariyan,Poursaeed,Rasht,0
+988,Maryam,Moghadam,Rasht,1
+989,Monir,Bagheri,Nowshahr,1
+993,Pariyan,Gholami,Rasht,0
+994,Ladan,Danesh,Rasht,0
+996,Sina,Abbasi,Rasht,0
+998,Kamran,Moradi,Rasht,1
+999,Atousa,Soleimani,"Bandar Anzali",0
