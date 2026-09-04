@@ -174,17 +174,16 @@ Error Code: 1366. Incorrect integer value: 'card' for column 'payment_type' at r
 زمانی که میخواهم از دیتابیس خروجی بگیریم با data export هیچکدوم از جداولی که ساختم رو نمی تونم ببینیم.
 
 #### راه حل:
-فعلا پیدا نکردم.
 
-
+از برنامه DBeaver کمک گرفتم، بعد از متصل شدن به MySQL، کلیک راست روی دیتابیس میکنیم بعد میریم به قسمت Tools, بعد new task, سپس با استفاده از پنجره ای که در اختیارمون قرار میگیره به فرمت دلخواه از دیتابیس خروجی میگیریم، که من در دو فایل csvو sql خروجی گرفتم.
 
 ### مشکل دهم
 
 وقتی روی reverse engineer میزنم MySQLworkbench ، کرش میکنه و یک دفعه ای بسته میشه
 
 #### راه حل:
-فعلا پیدا نکردم.
 
+برای خروجی گرفتن و ساختن ER، چون MySQLworkbench متوقف میشد و crash میکرد، از برنامه DBeaver استفاده کردم، که با متصل شدن به MySQL توسط DBeaver تمام دیتابیس ها وارد DBeaver شدن و در این برنامه نمودار را رسم کردم.
 
 
 ## جواب ها
@@ -421,4 +420,6 @@ Error Code: 1366. Incorrect integer value: 'card' for column 'payment_type' at r
 [ویدیو یادآوری JOIN](https://www.youtube.com/watch?v=G3lJAxg1cy8)
 
 [نحوه خروجی گرفتن از دیتابیس](https://www.youtube.com/watch?v=lbrVhjnM5MQ)
+
+[خروجی گرفتن نمودار توسط DBeaver](https://www.youtube.com/watch?v=pmiTJZpoDJk)
 
