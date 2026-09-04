@@ -24,41 +24,41 @@ ON o.id = p.order_id;
 
 
 SELECT 
-YEAR(o.order_date) AS sale_year,
-MONTH(o.order_date) AS sale_month,
-COUNT(DISTINCT o.id) AS order_count,
-SUM(od.quantity) AS total_items,
-SUM(p.total_amount) AS total_sales
+	YEAR(o.order_date) AS sale_year,
+	MONTH(o.order_date) AS sale_month,
+	COUNT(DISTINCT o.id) AS order_count,
+	SUM(od.quantity) AS total_items,
+	SUM(p.total_amount) AS total_sales
 FROM orders AS o
 JOIN order_detail2 AS od
 ON o.id = od.order_id
 JOIN payments AS p
 ON o.id = p.order_id
 GROUP BY 
-YEAR(o.order_date),
-MONTH(o.order_date)
+	YEAR(o.order_date),
+	MONTH(o.order_date)
 ORDER BY 
-sale_year,
-sale_month;
+	sale_year,
+	sale_month;
 
 
 -- 2:
 
 SELECT 
-u.id,
-u.first_name,
-u.last_name,
-SUM(p.total_amount) AS sum_amount,
-AVG(p.total_amount) AS avg_amount
+	u.id,
+	u.first_name,
+	u.last_name,
+	SUM(p.total_amount) AS sum_amount,
+	AVG(p.total_amount) AS avg_amount
 FROM users AS u
 JOIN orders AS o
 ON u.id = o.user_id
 JOIN payments AS p
 ON o.id = p.order_id
 GROUP BY 
-u.id,
-u.first_name,
-u.last_name
+	u.id,
+	u.first_name,
+	u.last_name
 HAVING COUNT(o.id) > 1
 ORDER BY sum_amount DESC;
 
@@ -111,5 +111,101 @@ FROM orders AS o
 JOIN payments AS p
 ON p.order_id = o.id
 GROUP BY sales_channel;
+
+-- 6:
+SELECT 
+
+	u.city,
+	COUNT(o.id) AS num_of_orders,
+	COUNT(DISTINCT o.user_id) AS num_of_customers,
+    SUM(p.total_amount) AS total_sales,
+    AVG(p.total_amount) AS avg_total_sales
+    
+FROM users AS u
+JOIN orders AS o
+ON o.user_id = u.id
+JOIN payments AS p
+ON p.order_id = o.id
+GROUP BY u.city
+ORDER BY total_sales DESC;
+
+
+-- 7: 
+SELECT 
+	CASE
+    WHEN discount_id IS NULL
+    THEN 'without discout'
+    ELSE 'with discount'
+    END AS discount_status,
+    
+    COUNT(id) AS transaction,
+    SUM(total_price) AS before_discount,
+    SUM(discount_price) AS discount_amount,
+    SUM(total_amount) AS final_sales
+    
+FROM payments
+GROUP BY discount_status;
+
+
+-- 8:
+/*
+- investigate the city they are in mostly.
+- if they are abled or disabled in the system.
+- How old they are ?
+- how many days is past after they have registered?
+*/
+
+SELECT 
+	u.id,
+	u.first_name,
+	u.last_name,
+	u.city, 
+    COUNT(o.id) AS order_count
+FROM users AS u
+LEFT JOIN orders AS o
+ON u.id = o.user_id
+GROUP BY 
+	u.id,
+	u.first_name,
+	u.last_name,
+	u.city
+HAVING COUNT(o.id)<=1;
+
+
+-- 9:
+
+
+SELECT u.id,
+	COUNT(o.id) AS order_count ,
+	SUM(p.total_amount) AS total_purchase 
+FROM users u JOIN orders o
+ON u.id=o.user_id 
+JOIN payments p 
+ON o.id=p.order_id 
+GROUP BY u.id;
+
+
+SELECT 
+	CASE 
+    WHEN order_count>=5 
+    THEN 'Loyal' 
+    ELSE 'Normal' 
+    END AS customer_type,
+	COUNT(*) AS customers,
+    AVG(total_purchase) AS avg_purchase
+FROM(
+	SELECT u.id,
+	COUNT(o.id) AS order_count ,
+	SUM(p.total_amount) AS total_purchase 
+	FROM users u JOIN orders o
+	ON u.id=o.user_id 
+	JOIN payments p 
+	ON o.id=p.order_id 
+	GROUP BY u.id
+) AS t
+GROUP BY customer_type;
+
+
+
 
 
