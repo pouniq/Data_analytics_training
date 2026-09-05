@@ -20,7 +20,11 @@
 
 
 
-
+> [!NOTE] 
+> خروجی هر کد (دیتاست جواب هر سوال) در لینک هایی جداگانه در فرمت csv در انتهای هر سوال قرار گرفته.
+> مانند [solution three](https://github.com/pouniq/Data_analytics_training/blob/main/MySQL/tamrin_5_SQL/dataset_solutions/3.csv)
+ دیتای خروجی از کد سوم هست.
+> 
 
 
 ## نمودار ER برای دیتابیس
