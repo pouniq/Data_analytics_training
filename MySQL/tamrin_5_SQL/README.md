@@ -69,7 +69,7 @@ print(f"Generated {num_user_basket} basket items.")
 
 sql_lines.append("\nSET FOREIGN_KEY_CHECKS = 1;")
 ```
-که i رو از for loop حذف کردم تا بتوانم در SQL واردشون کنم.
+که id رو از for loop حذف کردم تا بتوانم در SQL واردشون کنم.
 
 ```python
 sql_lines.append("\n-- Insert Basket Items")
@@ -290,7 +290,7 @@ Error Code: 1366. Incorrect integer value: 'card' for column 'payment_type' at r
 
 
 
-براي هر محصول، تعداد دفعات فروش، مجموع تعداد فروختهشده و مجموع درآمد حاصل از فروش را محاسبه كنيد. سپس ١٠ محصول برتر از نظر درآمد را مشخص كنيد.
+براي هر محصول، تعداد دفعات فروش، مجموع تعداد فروخته شده و مجموع درآمد حاصل از فروش را محاسبه كنيد. سپس ١٠ محصول برتر از نظر درآمد را مشخص كنيد.
 
 
 ![3](<./pics/3.jpg>) 
