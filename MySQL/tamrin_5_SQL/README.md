@@ -206,6 +206,18 @@ Error Code: 1366. Incorrect integer value: 'card' for column 'payment_type' at r
 برای خروجی گرفتن و ساختن ER، چون MySQLworkbench متوقف میشد و crash میکرد، از برنامه DBeaver استفاده کردم، که با متصل شدن به MySQL توسط DBeaver تمام دیتابیس ها وارد DBeaver شدن و در این برنامه نمودار را رسم کردم.
 
 
+
+### مشکل یازدهم
+
+```SQL
+'categories', 'CREATE TABLE `categories` (\n  `id` int NOT NULL AUTO_INCREMENT,\n  `title` varchar(100) DEFAULT NULL,\n  `parent_id` int DEFAULT NULL,\n  PRIMARY KEY (`id`),\n  KEY `cat_f1_idx` (`parent_id`),\n  CONSTRAINT `cat_f1` FOREIGN KEY (`parent_id`) REFERENCES `categories` (`id`)\n) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=utf8mb3'
+```
+
+
+این ارور نشون میده که من FK برای جدول `products` رو درست ست نکرده بودم، نیاز بود که REFERENCED TABLE جدول category باشه و از category_id به کلید id در category حرکت کنه.
+
+
+
 ## جواب ها
 
 
