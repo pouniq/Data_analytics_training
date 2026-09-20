@@ -7,7 +7,7 @@ from dotenv import load_dotenv
 import os
 
 
-load_dotenv()
+load_dotenv(override=True)
 
 conn = mysql.connector.connect(
     host="127.0.0.1",
@@ -16,12 +16,7 @@ conn = mysql.connector.connect(
     password = os.getenv('DB_PASSWORD')
 )
 
-
-
-print("USER:", os.getenv("DB_USER"))
-print("PASSWORD:", os.getenv("DB_PASSWORD"))
-
-df = pd.read_sql("SELECT * FROM order_detail2", conn)
+df = pd.read_sql("SELECT * FROM KohanNegar.order_detail2", conn)
 print(df.head())
 print(df.head(10))
 print(df.tail()) 
