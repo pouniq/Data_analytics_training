@@ -1,5 +1,41 @@
 # تمرین ششم 
 
+
+![2](<./images/back.jpg>) 
+
+
+
+## درست و فعال کردن محیط مجازی (virtual environment):
+
+
+
+
+
+```BASH
+python3 -m venv dataAnalytics
+```
+
+
+```BASH
+source dataAnalytics/bin/activate
+```
+
+
+
+## نصب کتابخانه ها
+
+
+
+![2](<./images/install_libraries.png>) 
+
+
+
+
+
+![2](<./images/install_mysql.png>) 
+
+![2](<./images/install_dotenv.png>) 
+
 ## باگ ها:
 
 ```python
@@ -13,6 +49,8 @@ UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or 
 یک باگ دیگر: من order_id رو به عنوان PK در order_detail2 قرار داده بودم که اشتباه بود باید detail_id رو قرار میدادم.
 
 
+
+![2](<./images/error_selecting_db.png>) 
 
 به دلیل اینکه چندین دیتابیس درون MySQL من وجود داشت به همین دلیل باید به این صورت مشخص می کردم که کدام دیتابیس را میخواهم.
 
