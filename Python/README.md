@@ -11,11 +11,16 @@
 
 
 
+
+ساختن یک محیط مجازی برای نصب کتابخانه های مورد نیاز:
 ```BASH
 python3 -m venv dataAnalytics
 ```
 
 
+
+
+فعال کردن محیط مجازی برای نصب کتابخانه ها:
 ```BASH
 source dataAnalytics/bin/activate
 ```
@@ -26,13 +31,23 @@ source dataAnalytics/bin/activate
 
 
 
+کتابخانه های مورد نیاز ابتدایی را نصب می کنیم:
+- نامپای
+- مت پلات لیب
+- پانداز
 ![2](<./images/install_libraries.png>) 
 
 
 
 
+نصب mySQL connector:
+
 
 ![2](<./images/install_mysql.png>) 
+
+
+
+نصب کتابخانه dotenv, برای اینکه میخواستم فایل را در گیتهاب منتشر کنم پس نیاز بود که رمز و یوزرنیم را در یک فایل جداگانه قرار می دادم و آن را فراخوانی می کردم و همزمان فایل .env را در .gitignore قرار دادم تا در گیتهاب push نشود.
 
 ![2](<./images/install_dotenv.png>) 
 
