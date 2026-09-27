@@ -56,7 +56,7 @@ source dataAnalytics/bin/activate
 ```python
 UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection.
 ```
-پانداز در اینجا هشدار می دهد که باید از SQLAlchemy که یکی دیگر از کتابخانه های پایتون هست و از پانداز هم مشکلی ندارد استفاده کنیم و به دلیل اینکه مشکلی ایجاد نشد از استفاده از SQLAlchemy صرف نظر کردم.
+پانداز در اینجا هشدار می دهد که باید از SQLAlchemy که یکی دیگر از کتابخانه های پایتون هست و از پانداز پشتیبانی می کند، استفاده کنیم و به دلیل اینکه مشکلی ایجاد نشد از استفاده از SQLAlchemy صرف نظر کردم.
 
 
 
